@@ -1,4 +1,4 @@
-export const config: WebdriverIO.Config = {
+export const config = {
     specs: [
         './specs'
     ],
@@ -12,8 +12,8 @@ export const config: WebdriverIO.Config = {
     capabilities: [{
         maxInstances: 1,
         browserName: 'chrome',
-        acceptInsecureCerts: true
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        acceptInsecureCerts: true,
+        excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
@@ -27,7 +27,7 @@ export const config: WebdriverIO.Config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: ['selenium-standalone','docker'],
+    services: ['selenium-standalone'],
     framework: 'mocha',
     // specFileRetries: 1,
     // specFileRetriesDelay: 0,

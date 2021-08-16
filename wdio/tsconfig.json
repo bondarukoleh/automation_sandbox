@@ -1,11 +1,23 @@
 {
   "compilerOptions": {
+    "target": "es6",
+    "skipLibCheck": true,
+    "sourceMap": false,
     "types": [
       "node",
       "webdriverio/async",
       "@wdio/mocha-framework",
       "expect-webdriverio",
       "@wdio/selenium-standalone-service"
-    ]
-  }
+    ],
+    "outDir": "dist"
+  },
+  "module": "es",
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "specs",
+    "lib"
+  ]
 }
