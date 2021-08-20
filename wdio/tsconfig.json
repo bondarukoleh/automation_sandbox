@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2020",
     "skipLibCheck": true,
     "sourceMap": false,
     "types": [
@@ -12,7 +12,7 @@
     ],
     "outDir": "dist"
   },
-  "module": "es",
+  "module": "commonjs",
   "exclude": [
     "node_modules"
   ],

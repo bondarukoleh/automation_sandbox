@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.ts --spec specs/example.e2e.ts",
+    "test": "wdio wdio.conf.ts",
     "tsc": "tsc"
   },
   "keywords": [],

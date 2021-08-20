@@ -1,6 +1,6 @@
 export const config = {
     specs: [
-        './specs'
+        './specs/**/*.spec.ts'
     ],
     exclude: [
         // 'path/to/excluded/files'
@@ -11,13 +11,13 @@ export const config = {
     maxInstances: 1,
     capabilities: [{
         maxInstances: 1,
-        browserName: 'chrome',
+        browserName: 'firefox',
         acceptInsecureCerts: true,
         excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'error',
     // logLevels: {
     //     webdriver: 'info',
     //     '@wdio/appium-service': 'info'
