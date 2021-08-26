@@ -1,4 +1,9 @@
 {
-  "webDriverUniversity": "https://www.webdriveruniversity.com/",
+  "webDriverUniversity": {
+    "host": "https://www.webdriveruniversity.com/",
+    "paths": {
+      "contactUs": "/Contact-Us/contactus.html"
+    }
+  },
   "automationTestStore": "https://automationteststore.com/"
 }

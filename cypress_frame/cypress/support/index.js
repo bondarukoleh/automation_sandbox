@@ -17,8 +17,8 @@
 import './commands'
 
 before(() => {
-  console.log('Global before');
   cy.fixture('urls.json').as('urls');
+  cy.fixture('userData.json').as('userData');
 })
 
 // Alternatively you can use CommonJS syntax:
