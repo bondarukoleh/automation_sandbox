@@ -16,5 +16,10 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+before(() => {
+  console.log('Global before');
+  cy.fixture('urls.json').as('urls');
+})
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
