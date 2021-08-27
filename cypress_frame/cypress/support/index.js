@@ -19,6 +19,14 @@ import './commands'
 before(() => {
   cy.fixture('urls.json').as('urls');
   cy.fixture('userData.json').as('userData');
+
+  cy.server(
+    {
+      ignore(xhr) {
+        return xhr.method === 'GET' || 'POST' && /users*/.test(xhr.url)
+      }
+    }
+  )
 })
 
 // Alternatively you can use CommonJS syntax:
