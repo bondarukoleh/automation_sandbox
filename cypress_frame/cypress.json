@@ -1,5 +1,7 @@
 {
   "viewportWidth": 1000,
   "viewportHeight": 660,
-  "watchForFileChanges": false
+  "watchForFileChanges": false,
+  "integrationFolder": "cypress/integration/tests",
+  "testFiles": "**/**.spec.js"
 }

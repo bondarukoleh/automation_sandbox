@@ -12,6 +12,9 @@ describe(`Test contact us form`,  () => {
     cy.get('.contentpanel').should(el => {
       expect(el[0].innerText).contains('Your enquiry has been successfully')
     });
+    cy.title().should('equal', 'Contact Us')
+    cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
+    cy.url().should('include', 'contact')
   });
 
   it('should NOT be able to submit, fields are required', function () {
