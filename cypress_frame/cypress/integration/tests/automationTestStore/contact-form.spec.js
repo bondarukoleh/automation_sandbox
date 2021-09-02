@@ -1,5 +1,5 @@
 describe(`Test contact us form`,  () => {
-  it.only('should be able to submit', function () {
+  it('should be able to submit', function () {
     const {automationTestStore} = this.urls;
     const {firstName, lastName, email, comments} = this.userData;
 
