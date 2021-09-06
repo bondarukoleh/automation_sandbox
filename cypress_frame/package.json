@@ -6,7 +6,8 @@
   "scripts": {
     "test1": "./node_modules/.bin/cypress run --spec='cypress/integration/tests/automationTestStore/**/*.*'",
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed",
-    "open": "./node_modules/.bin/cypress open"
+    "open": "./node_modules/.bin/cypress open",
+    "test:with:file": "node ./run.tests.js"
   },
   "keywords": [],
   "author": "",
