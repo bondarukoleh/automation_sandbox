@@ -3,5 +3,6 @@
   "viewportHeight": 660,
   "watchForFileChanges": false,
   "integrationFolder": "cypress/integration/tests",
-  "testFiles": "**/**.spec.js"
+  "testFiles": "**/**.spec.js",
+  "chromeWebSecurity": false
 }
