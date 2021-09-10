@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-file-upload'
 
 before(() => {
   cy.fixture('urls.json').as('urls');
