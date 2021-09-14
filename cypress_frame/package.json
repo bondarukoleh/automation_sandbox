@@ -8,7 +8,8 @@
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed",
     "open": "./node_modules/.bin/cypress open",
     "test:with:file": "node ./run.tests.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "cd .. && husky install cypress_frame/.husky"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "cypress-file-upload": "^5.0.8",
     "eslint": "^7.32.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "husky": "^7.0.2"
   }
 }
