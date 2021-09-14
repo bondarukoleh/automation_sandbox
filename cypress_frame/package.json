@@ -7,7 +7,8 @@
     "test1": "./node_modules/.bin/cypress run --spec='cypress/integration/tests/automationTestStore/**/*.*'",
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed",
     "open": "./node_modules/.bin/cypress open",
-    "test:with:file": "node ./run.tests.js"
+    "test:with:file": "node ./run.tests.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,8 @@
     "cypress": "^8.3.0"
   },
   "devDependencies": {
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0"
   }
 }

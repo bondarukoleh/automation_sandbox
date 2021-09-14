@@ -1,0 +1,22 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "google"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "semi": "warn",
+        "indent": ["warn", 2],
+        "max-len": ["error", 120],
+        "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+        "spaced-comment": "off",
+        "linebreak-style": ["warn", "unix"],
+        "comma-dangle": "warn"
+    }
+}
