@@ -1,5 +1,5 @@
-describe(`Test vars`,  () => {
-  it("Navigating to specific product pages", function () {
+describe(`Test vars`, () => {
+  it('Navigating to specific product pages', function() {
     const {automationTestStore} = this.urls;
 
     cy.visit(automationTestStore)
@@ -16,28 +16,28 @@ describe(`Test vars`,  () => {
     // skincareLink.click();
 
     //Recommended Approach
-    cy.get("a[href*='product/category&path=']").contains("Skincare").click()
-    cy.get("a[href*='product/category&path=']").contains("Makeup").click()
+    cy.get('a[href*=\'product/category&path=\']').contains('Skincare').click()
+    cy.get('a[href*=\'product/category&path=\']').contains('Makeup').click()
   });
 
-  it("Navigating to specific product pages", function () {
+  it('Navigating to specific product pages', function() {
     const {automationTestStore} = this.urls;
 
     cy.visit(automationTestStore)
-    cy.get("a[href*='product/category&path=']").contains("Makeup").click()
+    cy.get('a[href*=\'product/category&path=\']').contains('Makeup').click()
 
     //Following code will fail
     // const header = cy.get("h1 .maintext");
     // cy.log(header.text())
 
-    cy.get("h1 .maintext").then(($headerText) => {
+    cy.get('h1 .maintext').then(($headerText) => {
       const headerText = $headerText.text()
-      cy.log("Found header text: " + headerText)
+      cy.log('Found header text: ' + headerText)
       expect(headerText).is.eq('Makeup')
     })
   });
 
-  it("Validate properties of the Contact Us Page", function () {
+  it('Validate properties of the Contact Us Page', function() {
     const {automationTestStore} = this.urls;
 
     cy.visit(automationTestStore)

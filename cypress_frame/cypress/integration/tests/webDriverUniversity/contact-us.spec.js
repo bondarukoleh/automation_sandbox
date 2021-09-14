@@ -1,5 +1,5 @@
-describe(`Test contact us form`,  () => {
-  it('should be able to submit', function () {
+describe(`Test contact us form`, () => {
+  it('should be able to submit', function() {
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
     const {firstName, lastName, email, comments} = this.userData;
 
@@ -12,7 +12,7 @@ describe(`Test contact us form`,  () => {
     cy.get('#contact_reply h1').should('have.text', 'Thank You for your Message!');
   });
 
-  it('should NOT be able to submit, fields are required', function () {
+  it('should NOT be able to submit, fields are required', function() {
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
 
     cy.visit(`${host}${contactUs}`);

@@ -1,7 +1,7 @@
-describe("Interact with dropdown lists via webdriveruni", () => {
-  it("Select specific values via select dropdown lists", () => {
-    cy.visit("http://www.webdriveruniversity.com")
-    cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click({force:true})
+describe('Interact with dropdown lists via webdriveruni', () => {
+  it('Select specific values via select dropdown lists', () => {
+    cy.visit('http://www.webdriveruniversity.com')
+    cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click({force: true})
 
     // We can select the value from select elem
     cy.get('#dropdowm-menu-1').select('c#')

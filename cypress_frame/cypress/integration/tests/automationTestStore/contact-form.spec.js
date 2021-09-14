@@ -1,7 +1,7 @@
-describe(`Test contact us form`,  () => {
-  it('should be able to submit', function () {
+describe(`Test contact us form`, () => {
+  it('should be able to submit', function() {
     const {automationTestStore} = this.urls;
-    const {firstName, lastName, email, comments} = this.userData;
+    const {firstName, email, comments} = this.userData;
 
     cy.visit(automationTestStore);
     cy.get('ul.info_links_footer a[href$=contact]').click()
@@ -18,7 +18,7 @@ describe(`Test contact us form`,  () => {
     cy.get('@pageTitle').then(v => cy.log(v))
   });
 
-  it('should NOT be able to submit, fields are required', function () {
+  it('should NOT be able to submit, fields are required', function() {
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
 
     cy.visit(`${host}${contactUs}`);

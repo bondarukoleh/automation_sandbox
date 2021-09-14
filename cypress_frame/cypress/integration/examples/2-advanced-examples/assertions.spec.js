@@ -52,10 +52,10 @@ context('Assertions', () => {
     it('expect - make an assertion about a specified subject', () => {
       // We can use Chai's BDD style assertions
       expect(true).to.be.true
-      const o = { foo: 'bar' }
+      const o = {foo: 'bar'}
 
       expect(o).to.equal(o)
-      expect(o).to.deep.equal({ foo: 'bar' })
+      expect(o).to.deep.equal({foo: 'bar'})
       // matching text using regular expression
       expect('FooBar').to.match(/bar$/i)
     })
