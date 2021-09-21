@@ -1,5 +1,5 @@
 describe('Test Contact Us form via WebdriverUni', () => {
-  before(() => {
+  beforeEach(() => {
     cy.fixture('userData').then(function(data) {
       this.data = data;
       // this is JS global this reference, super anti pattern, just for example
@@ -8,8 +8,6 @@ describe('Test Contact Us form via WebdriverUni', () => {
   });
 
   it('Should be able to submit a successful submission via contact us form', function() {
-    cy.log('AAAAAAAAAAA')
-    cy.log(this.data)
     //cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     cy.visit('http://www.webdriveruniversity.com');
     cy.get('#contact-us').invoke('removeAttr', 'target').click({force: true});
