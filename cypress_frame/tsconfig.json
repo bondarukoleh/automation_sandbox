@@ -9,7 +9,6 @@
       "cypress", "node"
     ],
     "outDir": "dist",
-    "typeRoots": ["./cypress/support/index.d.ts"]
   },
   "include": [
     "cypress/**/*.ts",
