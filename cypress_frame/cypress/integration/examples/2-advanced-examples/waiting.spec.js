@@ -14,6 +14,7 @@ context('Waiting', () => {
     cy.get('.wait-input2').type('Wait 1000ms after typing')
     cy.wait(1000)
     cy.get('.wait-input3').type('Wait 1000ms after typing')
+    // eslint-disable-next-line cypress/no-unnecessary-waiting
     cy.wait(1000)
   })
 

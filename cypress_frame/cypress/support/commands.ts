@@ -32,7 +32,7 @@ Cypress.Commands.add("selectProduct", productName => {
   });
 })
 
-Cypress.Commands.add("webdriverUni_ContactForm_Submission",
+Cypress.Commands.add("webdriverUniContactFormSubmission",
   (firstName, lastName, email, comment, $selector, textToLocate) => {
     cy.get('[name="first_name"]').type(firstName);
     cy.get('[name="last_name"]').type(lastName);

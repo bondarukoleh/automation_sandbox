@@ -3,7 +3,8 @@ declare global {
     interface Chainable {
       selectProduct(productName: string): Chainable<Element>
 
-      webdriverUni_ContactForm_Submission(firstName: string, lastName: string, email: string, comment: string, $selector:  string, textToLocate: string): Chainable<number>
+      webdriverUniContactFormSubmission(firstName: string, lastName: string,
+        email: string, comment: string, $selector: string, textToLocate: string): Chainable<number>
 
       addProductToBasket(element: JQuery<Element>): Chainable<Element>
     }

@@ -11,6 +11,7 @@ describe('Alias and invoke', () => {
     let itemsTotal = 0;
     cy.get('@itemPrice').then($linkText => {
       let itemsPriceTotal = 0;
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       const itemPrice = $linkText.split('$');
       let i;
@@ -24,6 +25,7 @@ describe('Alias and invoke', () => {
 
     cy.get('@saleItemPrice').then($linkText => {
       let saleItemsPrice = 0;
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       const saleItemPrice = $linkText.split('$');
       let i;

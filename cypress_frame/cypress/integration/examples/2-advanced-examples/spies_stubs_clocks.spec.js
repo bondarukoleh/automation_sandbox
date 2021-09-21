@@ -115,11 +115,13 @@ context('Spies, Stubs, and Clock', () => {
       .withArgs(Cypress.sinon.match.number).throws(new Error('Invalid name'))
 
     expect(greeter.greet('World')).to.equal('Hi')
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(() => greeter.greet(42)).to.throw('Invalid name')
     expect(greeter.greet).to.have.been.calledTwice
 
     // non-matched calls goes the actual method
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(greeter.greet()).to.equal('Hello, undefined!')
   })

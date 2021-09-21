@@ -9,8 +9,10 @@ describe('Test Contact Us form via Automation Test Store', () => {
     })
     //cy.xpath("//a[contains(@href, 'contact')]").click();
     cy.get('@user').then((user) => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       cy.get('#ContactUsFrm_first_name').type(user.first_name);
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       cy.get('#ContactUsFrm_email').type(user.email);
     })

@@ -1,13 +1,22 @@
 {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "google",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:cypress/recommended"
+    ],
     "env": {
         "commonjs": true,
         "es6": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "mocha": true
     },
-    "extends": [
-        "google"
-    ],
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -27,6 +36,10 @@
         "no-invalid-this": "off",
         "require-jsdoc": "off",
         "new-cap": "off",
-        "valid-jsdoc": "off"
+        "valid-jsdoc": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "cypress/no-unnecessary-waiting": "off",
+        "@typescript-eslint/no-empty-function": "off"
     }
 }
