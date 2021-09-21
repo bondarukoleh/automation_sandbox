@@ -10,7 +10,7 @@ describe('Add multiple items to basket', () => {
     cy.get('a[href*=\'product/category&path=\']').contains('Hair Care').click();
   });
   it('Add specific items to basket', () => {
-    globalThis.data.productName.forEach(function(element) {
+    globalThis.data.productName.forEach(function(element: JQuery<Element>) {
       cy.addProductToBasket(element)
     })
     cy.get('.dropdown-toggle > .fa').click();

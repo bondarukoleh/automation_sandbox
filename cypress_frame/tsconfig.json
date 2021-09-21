@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "types": [
+      "cypress", "node"
+    ],
+    "outDir": "dist",
+    "typeRoots": ["./cypress/support/index.d.ts"]
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "node_modules/cypress"
+  ],
+}

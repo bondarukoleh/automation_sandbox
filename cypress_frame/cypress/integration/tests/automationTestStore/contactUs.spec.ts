@@ -9,7 +9,9 @@ describe('Test Contact Us form via Automation Test Store', () => {
     })
     //cy.xpath("//a[contains(@href, 'contact')]").click();
     cy.get('@user').then((user) => {
+      // @ts-ignore
       cy.get('#ContactUsFrm_first_name').type(user.first_name);
+      // @ts-ignore
       cy.get('#ContactUsFrm_email').type(user.email);
     })
     cy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email')

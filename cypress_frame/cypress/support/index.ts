@@ -1,3 +1,14 @@
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      selectProduct(productName: string): Chainable<Element>
+
+      webdriverUni_ContactForm_Submission(firstName: string, lastName: string, email: string, comment: string, $selector:  string, textToLocate: string): Chainable<number>
+
+      addProductToBasket(element: JQuery<Element>): Chainable<Element>
+    }
+  }
+}
 
 // ***********************************************************
 // This example support/index.js is processed and
@@ -26,10 +37,7 @@ before(() => {
     {
       ignore(xhr) {
         return xhr.method === 'GET' || 'POST' && /users*/.test(xhr.url)
-      }
-    }
+      },
+    },
   )
 })
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')

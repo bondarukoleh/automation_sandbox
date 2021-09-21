@@ -11,7 +11,7 @@ describe('Test File Upload via webdriveruni', () => {
           mimeType: 'image/png',
         },
         {
-          uploadType: 'input',
+          subjectType: 'input',
         },
       )
     })

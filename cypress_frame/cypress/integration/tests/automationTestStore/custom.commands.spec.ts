@@ -1,12 +1,13 @@
 describe('Test Contact Us form via WebdriverUni', () => {
   before(function() {
     cy.fixture('userData').then(function(data) {
-      // this.data = data;
+      this.data = data;
       // this is JS global this reference, super anti pattern, just for example
-      globalThis.data = data;
+      // globalThis.data = data;
     });
   });
-  it.only('Should be able to submit a successful submission via contact us form', () => {
+
+  it('Should be able to submit a successful submission via contact us form', function () {
     //cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     cy.visit('http://www.webdriveruniversity.com');
     cy.get('#contact-us').invoke('removeAttr', 'target').click({force: true});
@@ -20,11 +21,11 @@ describe('Test Contact Us form via WebdriverUni', () => {
     // cy.get('textarea.feedback-input').type("How can I learn Cypress?")
     // cy.get('[type="submit"]').click();
     // cy.get('h1').should('have.text', 'Thank You for your Message!')
-    cy.webdriverUni_ContactForm_Submission(data.firstName,
-      data.lastName, data.email, 'How can I learn Cypress?', 'h1', 'Thank You for your Message!');
+    cy.webdriverUni_ContactForm_Submission(this.data.firstName,
+      this.data.lastName, this.data.email, 'How can I learn Cypress?', 'h1', 'Thank You for your Message!');
   });
 
-  it('Should not be able to submit a successful submission via contact us form as all fields are required', () => {
+  it('Should not be able to submit a successful submission via contact us form as all fields are required', function () {
     //cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     cy.visit('http://www.webdriveruniversity.com');
     cy.get('#contact-us').invoke('removeAttr', 'target').click({force: true});
@@ -33,8 +34,8 @@ describe('Test Contact Us form via WebdriverUni', () => {
     // cy.get('textarea.feedback-input').type("How can I learn Cypress?")
     // cy.get('[type="submit"]').click();
     // cy.get('body').contains('Error: all fields are required');
-    cy.webdriverUni_ContactForm_Submission(data.first_name,
-      data.last_name, ' ', 'How can I learn Cypress?', 'body', 'Error: Invalid email address');
+    cy.webdriverUni_ContactForm_Submission(this.data.firstName,
+      this.data.lastName, ' ', 'How can I learn Cypress?', 'body', 'Error: Invalid email address');
   });
 });
 

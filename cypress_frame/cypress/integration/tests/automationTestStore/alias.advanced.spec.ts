@@ -11,6 +11,7 @@ describe('Alias and invoke', () => {
     let itemsTotal = 0;
     cy.get('@itemPrice').then($linkText => {
       let itemsPriceTotal = 0;
+      // @ts-ignore
       const itemPrice = $linkText.split('$');
       let i;
       for (i = 0; i < itemPrice.length; i++) {
@@ -23,6 +24,7 @@ describe('Alias and invoke', () => {
 
     cy.get('@saleItemPrice').then($linkText => {
       let saleItemsPrice = 0;
+      // @ts-ignore
       const saleItemPrice = $linkText.split('$');
       let i;
       for (i = 0; i < saleItemPrice.length; i++) {
@@ -34,7 +36,7 @@ describe('Alias and invoke', () => {
     })
       .then(() => {
         cy.log('The total price of all products: ' + itemsTotal);
-        expect(itemsTotal).to.equal(572.45);
+        expect(itemsTotal).to.equal(616.7);
       });
   });
 });

@@ -54,6 +54,7 @@ describe(`Test vars`, () => {
       //Embedded commands (Closure)
       cy.get('#field_11').then(fnText => {
         cy.log(fnText.text())
+        // @ts-ignore
         cy.log(fnText)
       })
     })

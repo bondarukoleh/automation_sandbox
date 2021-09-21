@@ -2,7 +2,8 @@
   "viewportWidth": 1000,
   "viewportHeight": 660,
   "watchForFileChanges": false,
-  "integrationFolder": "cypress/integration/tests",
-  "testFiles": "**/**.spec.js",
-  "chromeWebSecurity": false
+  "integrationFolder": "cypress/integration/tests/automationTestStore",
+  "testFiles": ["**/*spec.ts", "**/*spec.js"],
+  "chromeWebSecurity": false,
+  "video": false
 }

@@ -25,7 +25,7 @@ describe('Test Datepicker via webdriveruni', () => {
 
     function selectMonthAndYear() {
       cy.get('.datepicker-dropdown').find('.datepicker-switch').first().then(currentDate => {
-        if(!currentDate.text().includes(futureYear)) {
+        if(!currentDate.text().includes(`${futureYear}`)) {
           cy.get('.next').first().click();
           selectMonthAndYear();
         }

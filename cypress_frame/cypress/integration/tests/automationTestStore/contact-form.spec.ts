@@ -15,6 +15,7 @@ describe(`Test contact us form`, () => {
     cy.title().as('pageTitle').should('equal', 'Contact Us')
     cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
     cy.url().should('include', 'contact')
+    // @ts-ignore
     cy.get('@pageTitle').then(v => cy.log(v))
   });
 
