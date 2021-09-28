@@ -7,6 +7,8 @@ declare global {
         email: string, comment: string, $selector: string, textToLocate: string): Chainable<number>
 
       addProductToBasket(element: JQuery<Element>): Chainable<Element>
+
+      attachFile(fileData: any, uploadElement: any)
     }
   }
 }
