@@ -9,7 +9,12 @@
     "open": "./node_modules/.bin/cypress open",
     "test:with:file": "node ./run.tests.js",
     "lint": "eslint . --ext .js,.ts && tsc",
-    "prepare": "cd .. && husky install cypress_frame/.husky"
+    "prepare": "cd .. && husky install cypress_frame/.husky",
+    "merge-junit-results": "npx junit-merge -d cypress/results/junit/ -o cypress/results/junit/results.xml",
+    "delete-junit-results": "rm -rf cypress/results/*",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "merge-mochawesome-results": "npx mochawesome-merge cypress/results/mochawesome/*.json > cypress/results/mochawesome-results.json && npx marge cypress/results/mochawesome-results.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/*"
   },
   "keywords": [],
   "author": "",
@@ -24,9 +29,14 @@
     "@types/node": "14.17.0",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
+    "cypress-multi-reporters": "1.5.0",
     "eslint": "7.32.0",
     "eslint-config-google": "0.14.0",
     "eslint-plugin-cypress": "2.12.1",
-    "husky": "7.0.2"
+    "husky": "7.0.2",
+    "mocha-junit-reporter": "2.0.0",
+    "mochawesome": "6.3.1",
+    "mochawesome-merge": "4.2.0",
+    "mochawesome-report-generator": "5.2.0"
   }
 }

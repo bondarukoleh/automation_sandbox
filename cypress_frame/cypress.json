@@ -2,8 +2,12 @@
   "viewportWidth": 1000,
   "viewportHeight": 660,
   "watchForFileChanges": false,
-  "integrationFolder": "cypress/integration/tests/automationTestStore",
-  "testFiles": ["**/*spec.ts"],
+  "integrationFolder": "cypress/integration/tests/webDriverUniversity",
+  "testFiles": ["**/*spec.ts", "**/*spec.js"],
   "chromeWebSecurity": false,
-  "video": false
+  "video": false,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
 }

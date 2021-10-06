@@ -27,7 +27,7 @@
         "max-len": ["error", 120],
         "quotes": ["off", "single", { "allowTemplateLiterals": true }],
         "spaced-comment": "off",
-        "linebreak-style": ["warn", "unix"],
+        "linebreak-style": "off",
         "comma-dangle": "warn",
         "space-before-function-paren": ["error", "never"],
         "arrow-parens": "off",
