@@ -6,7 +6,8 @@
   "scripts": {
     "test_spec": "./node_modules/.bin/cypress run --spec='cypress/**/custom.commands.spec.ts'",
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed",
-    "open": "./node_modules/.bin/cypress open",
+    "test:dev": "npx cypress run",
+    "open": "./node_modules/.bin/cypress open --env config=dev",
     "test:with:file": "node ./run.tests.js",
     "lint": "eslint . --ext .js,.ts && tsc",
     "prepare": "cd .. && husky install cypress_frame/.husky",
@@ -22,6 +23,7 @@
   "dependencies": {
     "cypress": "8.4.1",
     "cypress-file-upload": "5.0.8",
+    "fs-extra": "10.0.0",
     "typescript": "4.4.3"
   },
   "devDependencies": {

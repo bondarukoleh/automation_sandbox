@@ -1,0 +1,13 @@
+{
+  "viewportWidth": 1000,
+  "viewportHeight": 660,
+  "watchForFileChanges": false,
+  "integrationFolder": "cypress/integration/tests/webDriverUniversity",
+  "testFiles": ["**/*spec.ts", "**/*spec.js"],
+  "chromeWebSecurity": false,
+  "video": false,
+  "reporter": "spec",
+  "env": {
+    "SOME_DEV_ENV_VAR": "SOME_DEV_ENV_VAR_VALUE"
+  }
+}
