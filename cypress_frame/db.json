@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Example Json Server",
+      "author": "Oleh B"
+    },
+    {
+      "title": ".o8ylggbt9da.q3zvqf07wv",
+      "author": "Sarah Jones",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Hello world!",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Oleh"
+  }
+}

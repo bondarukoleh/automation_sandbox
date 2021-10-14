@@ -26,7 +26,7 @@
 
 Cypress.Commands.add("selectProduct", productName => {
   cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) => {
-    if($el.text().includes(productName)) {
+    if ($el.text().includes(productName)) {
       cy.wrap($el).click()
     }
   });
@@ -44,9 +44,22 @@ Cypress.Commands.add("webdriverUniContactFormSubmission",
 
 Cypress.Commands.add("addProductToBasket", productName => {
   cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) => {
-    if($el.text() === productName) {
+    if ($el.text() === productName) {
       cy.log($el.text())
       cy.get('.productcart').eq(index).click();
     }
   });
 });
+
+// Cypress.Commands.overwrite(
+//   'screenshot',
+//   (originalFn, subject, name, options) => {
+//     // only take screenshots in headless browser
+//     if (Cypress.browser.isHeadless) {
+//       // return the original screenshot function
+//       return originalFn(subject, name, options)
+//     }
+//
+//     return cy.log('No screenshot taken when headed')
+//   },
+// )

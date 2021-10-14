@@ -1,5 +1,10 @@
-describe(`Test contact us form`, () => {
-  it.skip('should be able to submit', function() {
+describe(`Test contact us form`, {browser: 'chrome'}, () => {
+  it.skip('should be able to submit', {
+    retries: {
+      runMode: 2,
+      openMode: 1,
+    },
+  }, function() {
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
     const {firstName, lastName, email, comments} = this.userData;
 
@@ -12,7 +17,12 @@ describe(`Test contact us form`, () => {
     cy.get('#contact_reply h1').should('have.text', 'Thank You for your Message!');
   });
 
-  it('should NOT be able to submit, fields are required', function() {
+  it('should NOT be able to submit, fields are required', {
+    browser: 'firefox', /* test will run only if tests are running with firefox browser */
+  }, function() {
+    if (Cypress.isBrowser('firefox')) {
+      console.log('Do some specific firefox stuff')
+    }
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
     cy.visit(`${host}${contactUs}`);
     cy.log(Cypress.env('SOME_DEV_ENV_VAR'))
