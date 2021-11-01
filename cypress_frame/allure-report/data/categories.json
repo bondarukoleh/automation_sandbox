@@ -1,0 +1,86 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "`cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+      "children" : [ {
+        "name" : "Delete a post via /posts api",
+        "uid" : "47d66eced7874fb3",
+        "parentUid" : "2bb21da71f89e23a1a16b26bbd824252",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635804747894,
+          "stop" : 1635804748114,
+          "duration" : 220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2bb21da71f89e23a1a16b26bbd824252"
+    }, {
+      "name" : "expected { Object (name, email, ...) } to have property 'name' of 'Using POST in cy.route()', but got 'Using POST in cy.intercept()'",
+      "children" : [ {
+        "name" : "Post Request",
+        "uid" : "a269b70d5c949c92",
+        "parentUid" : "dfe0bea407ea63c607f7d5e7527fcb07",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635804762044,
+          "stop" : 1635804762721,
+          "duration" : 677
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dfe0bea407ea63c607f7d5e7527fcb07"
+    }, {
+      "name" : "`cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+      "children" : [ {
+        "name" : "Test valid signup",
+        "uid" : "745c5d5e2467208a",
+        "parentUid" : "345911ac312ec70f3a55dd4a8536528b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635804768663,
+          "stop" : 1635804769379,
+          "duration" : 716
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test valid login",
+        "uid" : "f11fac87a2657f3c",
+        "parentUid" : "345911ac312ec70f3a55dd4a8536528b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635804770923,
+          "stop" : 1635804771678,
+          "duration" : 755
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Mock global feed data",
+        "uid" : "1bb1b115ed150210",
+        "parentUid" : "345911ac312ec70f3a55dd4a8536528b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635804773131,
+          "stop" : 1635804773893,
+          "duration" : 762
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "345911ac312ec70f3a55dd4a8536528b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

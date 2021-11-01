@@ -1,0 +1,171 @@
+{
+  "uid" : "47d66eced7874fb3",
+  "name" : "Delete a post via /posts api",
+  "fullName" : "Delete a post via /posts api",
+  "historyId" : "ee45cce0eb3ceb4d8d7ce7508fb40a18",
+  "time" : {
+    "start" : 1635804747894,
+    "stop" : 1635804748114,
+    "duration" : 220
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+  "statusTrace" : "CypressError: `cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request\n    at http://localhost:49254/__cypress/runner/cypress_runner.js:157278:80\n    at tryCatcher (http://localhost:49254/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:49254/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:49254/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:49254/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:49254/__cypress/runner/cypress_runner.js:11329:18)\n    at _drainQueueStep (http://localhost:49254/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:49254/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:49254/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:49254/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:49254/__cypress/tests?p=cypress\\integration\\tests\\api\\delete-request.spec.js:102:8)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "fixture (\"urls.json\")",
+      "time" : {
+        "start" : 1635804747389,
+        "stop" : 1635804747393,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "as (\"urls\")",
+      "time" : {
+        "start" : 1635804747393,
+        "stop" : 1635804747393,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "fixture (\"userData.json\")",
+      "time" : {
+        "start" : 1635804747393,
+        "stop" : 1635804747396,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "as (\"userData\")",
+      "time" : {
+        "start" : 1635804747396,
+        "stop" : 1635804747396,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "server (\"{}\")",
+      "time" : {
+        "start" : 1635804747396,
+        "stop" : 1635804747397,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+    "statusTrace" : "CypressError: `cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request\n    at http://localhost:49254/__cypress/runner/cypress_runner.js:157278:80\n    at tryCatcher (http://localhost:49254/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:49254/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:49254/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:49254/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:49254/__cypress/runner/cypress_runner.js:11329:18)\n    at _drainQueueStep (http://localhost:49254/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:49254/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:49254/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:49254/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:49254/__cypress/tests?p=cypress\\integration\\tests\\api\\delete-request.spec.js:102:8)",
+    "steps" : [ {
+      "name" : "DELETE 404 http://localhost:3000/posts/13",
+      "time" : {
+        "start" : 1635804747923,
+        "stop" : 1635804748113,
+        "duration" : 190
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a79700935766c1af",
+      "name" : "delete-request.spec.js:2021-11-01T22:12:27.454Z",
+      "source" : "a79700935766c1af.png",
+      "type" : "image/png",
+      "size" : 47110
+    }, {
+      "uid" : "71889a7eec4702",
+      "name" : "delete-request.spec.js:2021-11-01T22:12:27.675Z",
+      "source" : "71889a7eec4702.png",
+      "type" : "image/png",
+      "size" : 84819
+    }, {
+      "uid" : "268ef96af64cd731",
+      "name" : "delete-request.spec.js:2021-11-01T22:12:27.956Z",
+      "source" : "268ef96af64cd731.png",
+      "type" : "image/png",
+      "size" : 84800
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Delete Request"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "47d66eced7874fb3.json",
+  "parameterValues" : [ ]
+}

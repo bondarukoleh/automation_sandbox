@@ -1,18 +1,27 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "module": "commonjs",
     "skipLibCheck": true,
     "strict": true,
     "noImplicitAny": false,
     "types": [
-      "cypress", "node"
+      "cypress",
+      "node"
     ],
-    "outDir": "dist",
+    "outDir": "dist"
   },
   "include": [
     "cypress/**/*.ts",
-    "node_modules/cypress"
+    "node_modules/cypress",
+    "node_modules/@shelex/cypress-allure-plugin/reporter",
   ],
+  "exclude": [
+    "allure-results",
+    "allure-report"
+  ]
 }

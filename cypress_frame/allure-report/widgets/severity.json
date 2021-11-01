@@ -1,0 +1,151 @@
+[ {
+  "uid" : "b8b487f06f5b6997",
+  "name" : "Put Request",
+  "time" : {
+    "start" : 1635804762736,
+    "stop" : 1635804763392,
+    "duration" : 656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a49d18ed251aa3d7",
+  "name" : "Validate status code of the /posts api",
+  "time" : {
+    "start" : 1635804749848,
+    "stop" : 1635804749906,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd8d0d99cfbaf4ae",
+  "name" : "Locate and assert the new comment",
+  "time" : {
+    "start" : 1635804745862,
+    "stop" : 1635804745912,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f11fac87a2657f3c",
+  "name" : "Test valid login",
+  "time" : {
+    "start" : 1635804770923,
+    "stop" : 1635804771678,
+    "duration" : 755
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "16f503cd8b77cdb1",
+  "name" : "Get Request",
+  "time" : {
+    "start" : 1635804760538,
+    "stop" : 1635804760801,
+    "duration" : 263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "460fe928f646c954",
+  "name" : "Delete the new comment",
+  "time" : {
+    "start" : 1635804745915,
+    "stop" : 1635804745962,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a83d9162159fd3d",
+  "name" : "Validate /posts api contains the correct keys and values",
+  "time" : {
+    "start" : 1635804749909,
+    "stop" : 1635804749967,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "745c5d5e2467208a",
+  "name" : "Test valid signup",
+  "time" : {
+    "start" : 1635804768663,
+    "stop" : 1635804769379,
+    "duration" : 716
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1bb1b115ed150210",
+  "name" : "Mock global feed data",
+  "time" : {
+    "start" : 1635804773131,
+    "stop" : 1635804773893,
+    "duration" : 762
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "30234b44b97e25ea",
+  "name" : "Update an existing post via the /posts api",
+  "time" : {
+    "start" : 1635804775594,
+    "stop" : 1635804775646,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca6d2869bbe358ec",
+  "name" : "Create a new post via /posts api",
+  "time" : {
+    "start" : 1635804765487,
+    "stop" : 1635804765528,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47d66eced7874fb3",
+  "name" : "Delete a post via /posts api",
+  "time" : {
+    "start" : 1635804747894,
+    "stop" : 1635804748114,
+    "duration" : 220
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fd8461a95d6ced3",
+  "name" : "Create a new comment",
+  "time" : {
+    "start" : 1635804745768,
+    "stop" : 1635804745858,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49586ba002d3f826",
+  "name" : "Validate title of latest post",
+  "time" : {
+    "start" : 1635804765533,
+    "stop" : 1635804765580,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a269b70d5c949c92",
+  "name" : "Post Request",
+  "time" : {
+    "start" : 1635804762044,
+    "stop" : 1635804762721,
+    "duration" : 677
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

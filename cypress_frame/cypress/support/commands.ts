@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import '@shelex/cypress-allure-plugin';
 
 Cypress.Commands.add("selectProduct", productName => {
   cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) => {

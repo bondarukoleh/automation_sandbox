@@ -1,0 +1,292 @@
+{
+  "1f1458dace5dbdcc4245707870277d4e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1fd8461a95d6ced3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804745768,
+        "stop" : 1635804745858,
+        "duration" : 90
+      }
+    } ]
+  },
+  "c4084c6f24e2b175206d72c31a275403" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16f503cd8b77cdb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804760538,
+        "stop" : 1635804760801,
+        "duration" : 263
+      }
+    } ]
+  },
+  "5382f80d13c3e8f6f9188c0f38703376" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "460fe928f646c954",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804745915,
+        "stop" : 1635804745962,
+        "duration" : 47
+      }
+    } ]
+  },
+  "9d2e9c13b667179216f91851de629f87" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd8d0d99cfbaf4ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804745862,
+        "stop" : 1635804745912,
+        "duration" : 50
+      }
+    } ]
+  },
+  "6bc04c14eac7c82516eee3e2c1899820" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "49586ba002d3f826",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804765533,
+        "stop" : 1635804765580,
+        "duration" : 47
+      }
+    } ]
+  },
+  "1979b7c90acab8e8384cd3e25a7ed8c8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f11fac87a2657f3c",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+      "time" : {
+        "start" : 1635804770923,
+        "stop" : 1635804771678,
+        "duration" : 755
+      }
+    } ]
+  },
+  "35a1bc482b587d8f83db4ac196d0a67c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8b487f06f5b6997",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804762736,
+        "stop" : 1635804763392,
+        "duration" : 656
+      }
+    } ]
+  },
+  "ee45cce0eb3ceb4d8d7ce7508fb40a18" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47d66eced7874fb3",
+      "status" : "failed",
+      "statusDetails" : "`cy.request()` failed on:\n\nhttp://localhost:3000/posts/13\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: http://localhost:3000/posts/13\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.4.1 Chrome/91.0.4472.164 Electron/13.2.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"cache-control\": \"no-cache\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"-1\",\n  \"x-content-type-options\": \"nosniff\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"2\",\n  \"etag\": \"W/\\\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\\\"\",\n  \"date\": \"Mon, 01 Nov 2021 22:12:27 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+      "time" : {
+        "start" : 1635804747894,
+        "stop" : 1635804748114,
+        "duration" : 220
+      }
+    } ]
+  },
+  "a847998db547af3fc966678e600c84f4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca6d2869bbe358ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804765487,
+        "stop" : 1635804765528,
+        "duration" : 41
+      }
+    } ]
+  },
+  "5f8cee0e80402c24692b7d9bef0c675e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "745c5d5e2467208a",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+      "time" : {
+        "start" : 1635804768663,
+        "stop" : 1635804769379,
+        "duration" : 716
+      }
+    } ]
+  },
+  "eb1aee45812f06c285675753d539b86b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a49d18ed251aa3d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804749848,
+        "stop" : 1635804749906,
+        "duration" : 58
+      }
+    } ]
+  },
+  "4288d2ce30fe257db57cad9704a27a2d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a269b70d5c949c92",
+      "status" : "failed",
+      "statusDetails" : "expected { Object (name, email, ...) } to have property 'name' of 'Using POST in cy.route()', but got 'Using POST in cy.intercept()'",
+      "time" : {
+        "start" : 1635804762044,
+        "stop" : 1635804762721,
+        "duration" : 677
+      }
+    } ]
+  },
+  "d998b4c254fcf98d5dc7812bb9db4136" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1bb1b115ed150210",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+      "time" : {
+        "start" : 1635804773131,
+        "stop" : 1635804773893,
+        "duration" : 762
+      }
+    } ]
+  },
+  "8be6aea3869c431dcf80322ca9e76c64" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30234b44b97e25ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804775594,
+        "stop" : 1635804775646,
+        "duration" : 52
+      }
+    } ]
+  },
+  "799785d3b7dd6cbacfafd2bb7879e148" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8a83d9162159fd3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635804749909,
+        "stop" : 1635804749967,
+        "duration" : 58
+      }
+    } ]
+  }
+}

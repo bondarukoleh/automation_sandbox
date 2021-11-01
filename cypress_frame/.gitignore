@@ -3,3 +3,5 @@ screenshots
 .husky/_
 dist
 results
+allure-results/
+allure_report/
