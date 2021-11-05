@@ -6,9 +6,9 @@
   "scripts": {
     "test_spec": "./node_modules/.bin/cypress run --spec='cypress/**/custom.commands.spec.ts'",
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed --browser chrome",
-    "test:dev": "npx cypress run",
+    "cy:run:allure": "cypress run --env allure=true,TEST_ENV=AQA",
     "open": "./node_modules/.bin/cypress open --env config=dev",
-    "run:dev": "cypress run --env config=dev",
+    "cy:run:dev": "cypress run --env config=dev",
     "test:with:file": "node ./run.tests.js",
     "lint": "eslint . --ext .js,.ts && tsc",
     "prepare": "cd .. && husky install cypress_frame/.husky",
@@ -18,10 +18,11 @@
     "merge-mochawesome-results": "npx mochawesome-merge cypress/results/mochawesome/*.json > cypress/results/mochawesome-results.json && npx marge cypress/results/mochawesome-results.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/*",
     "start-json-server": "json-server --watch db.json",
-    "run:allure": "cypress run --env config=dev,allure=true",
-    "generate:allure": "allure generate -c ./allure-results -o ./allure-report",
-    "open:allure": "allure open ./allure_report",
-    "report:allure": "npm run generate:allure && npm run open:allure"
+    "allure:generate:": "node ./cypress/support/reporter/allureReportGenerator.js",
+    "allure:open": "node ./cypress/support/reporter/allureOpen.js",
+    "allure:report": "npm run generate:allure && npm run open:allure",
+    "allure:merge": "node ./cypress/support/reporter/mergeAllureResults.js",
+    "cleanup": "node ./cypress/support/reporter/clean.js"
   },
   "keywords": [],
   "author": "",
