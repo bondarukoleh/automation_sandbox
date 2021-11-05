@@ -5,7 +5,7 @@ const {
   writeAllureReportInfo,
   ALLURE_RESULTS_PATH,
   TMS_URL,
-  ISSUE_URL
+  ISSUE_URL,
 } = require("../support/reporter/writeAllureEnvData");
 
 function getConfigurationByFile(file) {
