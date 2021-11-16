@@ -9,7 +9,7 @@ const REPORT_SERVER_URL = `https://reports.com/`
 const TMS_URL = `https://some-tms.com/`
 const ISSUE_URL = `https://bug-tracker.com/`
 const getCurrentTime = () => `${new Date().toISOString().replace(/[:.]/g, '-')}` /* 2021-11-05T20-04-59-474Z' */
-const ALLURE_RESULTS_PATH = `report/allure/allure-results-${getCurrentTime()}`
+const ALLURE_RESULTS_PATH = `report/allure/${TEST_ENV}/allure-results-${getCurrentTime()}`
 
 function addTmsLinkByName(itName: string) {
   cy.allure().link(`${TMS_URL}${itName}`, 'TMS TC', 'tms')

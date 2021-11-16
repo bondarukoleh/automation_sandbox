@@ -4,10 +4,10 @@ const fs = require("fs");
 
 const {TEST_ENV = 'DEV', BUILD_ID = '1'} = process.env;
 
-const allureReportPath = 'report/allure';
+const allureReportPath = `report/allure/${TEST_ENV}`;
 const mergedResults = `${allureReportPath}/merged-results`;
 const zippedResultsPath = `${allureReportPath}/${TEST_ENV}-${BUILD_ID}-${new Date().toISOString()
-  .replace(/[:.]/g, '-')}.zip`;
+  .replace(/[:|-]/g, '')}.zip`;
 const allureServerUrl = `https://reportServer/upload/${TEST_ENV}/${BUILD_ID}`;
 
 const sendMergedResults = async() => {

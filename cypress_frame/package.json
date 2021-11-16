@@ -18,9 +18,9 @@
     "merge-mochawesome-results": "npx mochawesome-merge cypress/results/mochawesome/*.json > cypress/results/mochawesome-results.json && npx marge cypress/results/mochawesome-results.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/*",
     "start-json-server": "json-server --watch db.json",
-    "allure:generate:": "node ./cypress/support/reporter/allureReportGenerator.js",
+    "allure:generate": "node ./cypress/support/reporter/allureReportGenerator.js",
     "allure:open": "node ./cypress/support/reporter/allureOpen.js",
-    "allure:report": "npm run generate:allure && npm run open:allure",
+    "allure:report": "npm run allure:generate && npm run allure:open",
     "allure:merge": "node ./cypress/support/reporter/mergeAllureResults.js",
     "allure:sendResult": "node ./cypress/support/reporter/zipAndSendResult.js",
     "cleanup": "node ./cypress/support/reporter/clean.js"

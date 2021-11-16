@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require("path");
+const {TEST_ENV = 'DEV', BUILD_ID = '1'} = process.env;
 
-const resultsPath = `report/allure`;
+const resultsPath = `report/allure/${TEST_ENV}`;
 const getAllResultsPaths = () => fs.readdirSync(resultsPath)
   .filter(folder => folder.includes('allure-results'))
   .map(file => path.resolve(resultsPath, file));
