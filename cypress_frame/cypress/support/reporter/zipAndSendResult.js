@@ -1,24 +1,30 @@
 const {zip} = require('zip-a-folder');
 const fetch = require('node-fetch');
 const fs = require("fs");
+const FormData = require("form-data");
 
-const {TEST_ENV = 'DEV', BUILD_ID = '1'} = process.env;
+const {
+  TEST_ENV = 'DEV',
+  BUILD_ID = '1',
+  JOB_TYPE = 'core',
+  ALLURE_SERVER_HOST = 'http://localhost:4400',
+} = process.env;
 
 const allureReportPath = `report/allure/${TEST_ENV}`;
 const mergedResults = `${allureReportPath}/merged-results`;
-const zippedResultsPath = `${allureReportPath}/${TEST_ENV}-${BUILD_ID}-${new Date().toISOString()
-  .replace(/[:|-]/g, '')}.zip`;
-const allureServerUrl = `https://reportServer/upload/${TEST_ENV}/${BUILD_ID}`;
-
+const zippedResultsPath = `${allureReportPath}/${TEST_ENV}-${JOB_TYPE}-${BUILD_ID}__${new Date().toISOString()
+  .replace(/[:|\-|.]/g, '')}.zip`; /* DEV-core-1__20211117T172220772Z.zip */
 const sendMergedResults = async() => {
   console.info(`Zipping the allure report...`);
   await zip(mergedResults, zippedResultsPath);
-
+  const formData = new FormData();
+  /* formData.append('allureArchive' - this name vital to get data on server side */
+  formData.append('allureArchive', fs.createReadStream(zippedResultsPath));
+  console.info(`Zipped the allure report`);
   try {
-    return fetch(allureServerUrl, {
-      body: fs.createReadStream(zippedResultsPath),
+    return fetch(ALLURE_SERVER_HOST, {
+      body: formData,
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
     });
   } catch (e) {
     console.error(`Couldn't send the results to server!`);
@@ -34,5 +40,5 @@ sendMergedResults()
   })
   .catch(err => {
     console.error(`Couldn't send the request with results!`);
-    console.error(err)
+    console.error(err);
   });
