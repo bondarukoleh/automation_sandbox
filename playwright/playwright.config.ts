@@ -6,7 +6,8 @@ const config: PlaywrightTestConfig = {
   globalSetup: './helpers/testSetup',
   globalTeardown: './helpers/tearDown',
   retries: ON_CI ? 2 : 0,
-  reporter: [ ['line'], ['allure-playwright'] ],
+  // reporter: [ ['line'], ['allure-playwright'] ],
+  workers: 4,
   use: {
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
