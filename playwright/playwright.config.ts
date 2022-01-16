@@ -9,7 +9,8 @@ const config: PlaywrightTestConfig = {
   // reporter: [ ['line'], ['allure-playwright'] ],
   workers: 4,
   use: {
-    trace: 'on-first-retry',
+    // trace: 'on-first-retry',
+    trace: 'on',
     screenshot: 'only-on-failure',
     headless: ON_CI,
     launchOptions: {
