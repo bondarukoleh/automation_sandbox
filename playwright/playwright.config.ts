@@ -9,8 +9,8 @@ const config: PlaywrightTestConfig = {
   // reporter: [ ['line'], ['allure-playwright'] ],
   workers: 4,
   use: {
-    // trace: 'on-first-retry',
-    trace: 'on',
+    baseURL: 'https://olehbondaruk-emaily-server.herokuapp.com/',
+    trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: ON_CI,
     launchOptions: {
