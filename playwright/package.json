@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
+    "test-tagged": "npx playwright test --grep @tryOuts",
     "report": "allure generate ./allure-results --clean && allure open ./allure-report"
   },
   "keywords": [],
