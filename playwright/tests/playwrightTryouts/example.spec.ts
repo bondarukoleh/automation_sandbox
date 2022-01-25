@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Some describe to start with', async () => {
+test.describe('Some describe to start with @tryOuts', async () => {
   // test.beforeAll(async () => console.log('Hello from beforeAll'));
   // test.beforeEach(async () => console.log('Hello from beforeEach'));
   // test.afterAll(async () => console.log('Hello from afterAll'));
