@@ -1,6 +1,7 @@
 import { test } from '@playwright/test';
 
 test.describe('API tests @tryOuts', function () {
+  test.skip(_ => true);
   test('get something', async ({ request }) => {
     const response = await request.get(`/api/current_user`);
     console.log(response.status)
@@ -9,6 +10,7 @@ test.describe('API tests @tryOuts', function () {
 });
 
 test.describe('API context tests @tryOuts', function () {
+  test.skip(_ => true);
   let apiContext;
 
   test.beforeAll(async ({ playwright }) => {

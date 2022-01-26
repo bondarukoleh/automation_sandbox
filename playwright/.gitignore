@@ -1,4 +1,5 @@
 allure-*
 test-results
+data/dynamicUserStates
 
 test.sh
