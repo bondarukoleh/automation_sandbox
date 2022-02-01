@@ -49,6 +49,7 @@ test.describe('Share state among tests @tryOuts', async () => {
 
 /* haven't seen the difference between regular describe */
 test.describe.serial('share tests in series @tryOuts', () => {
+  test.skip(() => true)
   let page: Page;
   test.beforeAll(async ({ browser }) => {
     // Create page once and sign in.
