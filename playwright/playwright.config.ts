@@ -1,4 +1,4 @@
-import { PlaywrightTestConfig, devices } from '@playwright/test';
+import {PlaywrightTestConfig, devices, expect} from '@playwright/test';
 import {TestOptions} from './data/testData'
 
 const ON_CI = !!process.env.CI;
@@ -21,10 +21,21 @@ const config: PlaywrightTestConfig<TestOptions> = {
     },
     person: 'Person from config'
   },
+  // webServer: {
+  //   command: 'cd ../../ && cd react_web_app && npm run server',
+  //   port: 8080,
+  //   timeout: 120 * 1000,
+  //   reuseExistingServer: !process.env.CI,
+  // },
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'], person: 'From more specific config' },
+      name: 'chromium-tryouts',
+      testDir: 'tests/playwrightTryouts/',
+      testMatch: /.*spec\.ts/,
+      use: {
+        ...devices['Desktop Chrome'],
+        person: 'From more specific config',
+      },
     },
     // {
     //   name: 'Pixel_4',
@@ -45,5 +56,22 @@ const config: PlaywrightTestConfig<TestOptions> = {
     // },
   ],
 };
+
+expect.extend({
+  customInRangeMatcher(receivedNum: number, min: number, max: number) {
+    const pass = receivedNum >= min && receivedNum <= max;
+    if (pass) {
+      return {
+        message: () => 'passed',
+        pass: true,
+      };
+    } else {
+      return {
+        message: () => 'failed',
+        pass: false,
+      };
+    }
+  },
+});
 
 export default config;

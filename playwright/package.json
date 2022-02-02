@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test-tagged": "npx playwright test --grep @tryOuts",
+    "tryouts-project-tests": "npx playwright test --project=chromium-tryouts",
     "report": "allure generate ./allure-results --clean && allure open ./allure-report",
     "postinstall": "npx playwright install"
   },

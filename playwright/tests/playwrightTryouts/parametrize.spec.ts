@@ -6,7 +6,7 @@ export const test = baseTest.extend<TestOptions>({
 });
 
 test.describe('Parametrized @tryOuts', async () => {
-  // test.skip(() => true);
+  test.skip(() => true);
   test('first parametrized test', async ({page, person}) => {
     console.log(person)
   });
