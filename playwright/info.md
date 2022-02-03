@@ -8,3 +8,6 @@ Cool features:
 5. It has detailed trace with each test.
 6. Super easy setup for different tests set with `projects`, where you can setup as many
     options for your tests as you wish.
+7. Interesting possibility to reduce time spend on login between each test with the shared logged
+`page` among the tests, depend on test, describe, or worker.
+
