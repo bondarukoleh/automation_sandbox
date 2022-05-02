@@ -23,7 +23,8 @@
     "allure:report": "npm run allure:generate && npm run allure:open",
     "allure:merge": "node ./cypress/support/reporter/mergeAllureResults.js",
     "allure:sendResult": "node ./cypress/support/reporter/zipAndSendResult.js",
-    "cleanup": "node ./cypress/support/reporter/clean.js"
+    "cleanup": "node ./cypress/support/reporter/clean.js",
+    "wiremock": "wiremock --port=9090"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "fs-extra": "10.0.0",
     "node-fetch": "^2.1.2",
     "typescript": "4.4.3",
+    "wiremock": "2.33.2",
     "zip-a-folder": "1.1.0"
   },
   "devDependencies": {
