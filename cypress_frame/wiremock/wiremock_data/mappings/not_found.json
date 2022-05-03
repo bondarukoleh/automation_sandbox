@@ -1,0 +1,28 @@
+{
+  "id" : "414be755-602f-340d-b8e2-a7af5f5fe8f5",
+  "request" : {
+    "url" : "/public/v2/users/not_found",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "not_found.json",
+    "headers" : {
+      "Server" : "nginx",
+      "Date" : "Tue, 03 May 2022 21:13:18 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Vary" : [ "Accept-Encoding", "Origin" ],
+      "X-Frame-Options" : "SAMEORIGIN",
+      "X-XSS-Protection" : "0",
+      "X-Content-Type-Options" : "nosniff",
+      "X-Download-Options" : "noopen",
+      "X-Permitted-Cross-Domain-Policies" : "none",
+      "Referrer-Policy" : "strict-origin-when-cross-origin",
+      "Cache-Control" : "no-cache",
+      "X-Request-Id" : "e4a0b8f5-0aa5-4b42-b674-99e9729117f2",
+      "X-Runtime" : "0.005856",
+      "Strict-Transport-Security" : "max-age=63072000; includeSubDomains"
+    }
+  },
+  "uuid" : "414be755-602f-340d-b8e2-a7af5f5fe8f5"
+}
