@@ -24,8 +24,8 @@
     "allure:merge": "node ./cypress/support/reporter/mergeAllureResults.js",
     "allure:sendResult": "node ./cypress/support/reporter/zipAndSendResult.js",
     "cleanup": "node ./cypress/support/reporter/clean.js",
-    "wiremock": "wiremock --port=9090 --root ./wiremock/wiremock_data --proxy-all https://gorest.co.in --record-mappings",
-    "wiremock:serve": "wiremock --port=9090 --root ./wiremock/wiremock_data --proxy-all https://gorest.co.in"
+    "wiremock:record": "wiremock --port=9090 --root ./wiremock/wiremock_data --proxy-all https://gorest.co.in --record-mappings",
+    "wiremock:serve": "wiremock --port=9090 --root ./wiremock/wiremock_data"
   },
   "keywords": [],
   "author": "",
