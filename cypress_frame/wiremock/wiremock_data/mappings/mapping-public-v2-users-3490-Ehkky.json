@@ -1,0 +1,28 @@
+{
+  "id" : "cc70a150-e320-37a9-9525-71cb30b7f1ae",
+  "request" : {
+    "url" : "/public/v2/users/3490",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "body-public-v2-users-3490-Ehkky.json",
+    "headers" : {
+      "Server" : "nginx",
+      "Date" : "Tue, 03 May 2022 21:23:44 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Vary" : [ "Accept-Encoding", "Origin" ],
+      "X-Frame-Options" : "SAMEORIGIN",
+      "X-XSS-Protection" : "0",
+      "X-Content-Type-Options" : "nosniff",
+      "X-Download-Options" : "noopen",
+      "X-Permitted-Cross-Domain-Policies" : "none",
+      "Referrer-Policy" : "strict-origin-when-cross-origin",
+      "Cache-Control" : "no-cache",
+      "X-Request-Id" : "88e4867e-5554-490d-8687-cb1daa01d122",
+      "X-Runtime" : "0.005162",
+      "Strict-Transport-Security" : "max-age=63072000; includeSubDomains"
+    }
+  },
+  "uuid" : "cc70a150-e320-37a9-9525-71cb30b7f1ae"
+}
