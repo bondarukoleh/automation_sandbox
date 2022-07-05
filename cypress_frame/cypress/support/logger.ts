@@ -8,11 +8,17 @@ const logLevels = {
   debug: 4,
   trace: 5,
 };
-
+const alignedWithColorsAndTime = format.combine(
+  // format.colorize(), /* json format is not compatible with colors, without json - context are not working */
+  format.timestamp(),
+  format.align(),
+  format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`),
+  format.json()
+);
 export const logger = createLogger({
-  levels: logLevels,
+  level: 'info', /* Set the leve here */
   transports: [new transports.Console()],
-  format: format.combine(format.timestamp(), format.json()),
+  format: alignedWithColorsAndTime,
   defaultMeta: {
     tests: 'Cypress tests'
   },

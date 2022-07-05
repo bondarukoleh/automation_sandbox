@@ -7,7 +7,7 @@
     "test_spec": "./node_modules/.bin/cypress run --spec='cypress/**/custom.commands.spec.ts'",
     "test": "./node_modules/.bin/cypress run --config-file=cypress.json --headed --browser chrome",
     "cy:run:allure": "cypress run --env allure=true,TEST_ENV=AQA",
-    "open": "./node_modules/.bin/cypress open --env config=dev",
+    "open": "./node_modules/.bin/cypress open",
     "cy:run:dev": "cypress run --env config=dev",
     "test:with:file": "node ./run.tests.js",
     "lint": "eslint . --ext .js,.ts && tsc",
