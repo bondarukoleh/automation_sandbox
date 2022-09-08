@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig<TestOptions> = {
   globalTeardown: './helpers/tearDown',
   retries: ON_CI ? 2 : 0,
   // reporter: [ ['line'], ['allure-playwright'] ],
-  maxFailures:  ON_CI ? 10 : undefined,
+  maxFailures: ON_CI ? 10 : undefined,
   workers: 4,
   // testMatch: 'test.list.ts',
   use: {
@@ -17,9 +17,9 @@ const config: PlaywrightTestConfig<TestOptions> = {
     screenshot: 'only-on-failure',
     headless: ON_CI,
     launchOptions: {
-      slowMo: 500
+      slowMo: 500,
     },
-    person: 'Person from config'
+    person: 'Person from config',
   },
   // webServer: {
   //   command: 'cd ../../ && cd react_web_app && npm run server',
@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig<TestOptions> = {
   projects: [
     {
       name: 'chromium-tryouts',
-      testDir: 'tests/playwrightTryouts/',
+      testDir: 'tests/ui/',
       testMatch: /.*spec\.ts/,
       use: {
         ...devices['Desktop Chrome'],

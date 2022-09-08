@@ -1,5 +1,5 @@
 describe(`Test contact us form`, () => {
-  it('should be able to submit', function() {
+  it.skip('should be able to submit', function() {
     const {automationTestStore} = this.urls;
     const {firstName, email, comments} = this.userData;
 
@@ -23,7 +23,8 @@ describe(`Test contact us form`, () => {
   it('should NOT be able to submit, fields are required', function() {
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
 
-    cy.visit(`${host}${contactUs}`);
+    // cy.visit(`${host}${contactUs}`);
+    cy.visit(`http://localhost:8080/${contactUs}`);
     cy.get('[type="submit"]').click();
     cy.get('body').should('contain.text', 'Error: all fields are required');
   });

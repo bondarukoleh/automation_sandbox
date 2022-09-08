@@ -6,3 +6,6 @@ results
 allure-results/
 allure-report/
 report/
+
+# Needed to work
+.npmrc
