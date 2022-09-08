@@ -1,10 +1,16 @@
+import {logger} from "../../../support/logger";
+
 describe(`Test contact us form`, {browser: 'chrome'}, () => {
-  it.skip('should be able to submit', {
+  it('should be able to submit', {
     retries: {
       runMode: 2,
       openMode: 1,
     },
   }, function() {
+    logger.info('Something from test')
+    logger.warn('Something from test')
+    logger.error('Something from test')
+    logger.child({context: {spec: 'contact-us'}}).info('From spec')
     const {webDriverUniversity: {host, paths: {contactUs}}} = this.urls;
     const {firstName, lastName, email, comments} = this.userData;
 

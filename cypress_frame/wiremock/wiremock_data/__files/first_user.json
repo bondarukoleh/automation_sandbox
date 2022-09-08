@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "name": "Mocked name",
+  "email": "name@gmail.com",
+  "gender": "male",
+  "status": "active"
+}

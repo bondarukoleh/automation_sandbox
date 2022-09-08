@@ -7,7 +7,7 @@
     "test_spec": "./node_modules/.bin/cypress run --spec='cypress/**/contact-form.spec.ts'",
     "test": "cypress run --config-file=cypress.json --headed --browser chrome",
     "cy:run:allure": "cypress run --env allure=true,TEST_ENV=AQA",
-    "open": "./node_modules/.bin/cypress open --env config=dev",
+    "open": "./node_modules/.bin/cypress open",
     "cy:run:dev": "cypress run --env config=dev",
     "test:with:file": "node ./run.tests.js",
     "lint": "eslint . --ext .js,.ts && tsc",
@@ -24,8 +24,8 @@
     "allure:merge": "node ./cypress/support/reporter/mergeAllureResults.js",
     "allure:sendResult": "node ./cypress/support/reporter/zipAndSendResult.js",
     "cleanup": "node ./cypress/support/reporter/clean.js",
-    "wiremock1": "wiremock --port=9090 --record-mappings --root-dir ./wiremock_data --verbose --preserve-host-header --proxy-via internet.proxy.fedex.com:3128",
-    "wiremock": "wiremock --port=9090 --root-dir ./wiremock_data --verbose"
+    "wiremock:record": "wiremock --port=9090 --root ./wiremock/wiremock_data --proxy-all https://gorest.co.in --record-mappings",
+    "wiremock:serve": "wiremock --port=9090 --root ./wiremock/wiremock_data"
   },
   "keywords": [],
   "author": "",
@@ -38,13 +38,14 @@
     "fs-extra": "10.0.0",
     "node-fetch": "^2.1.2",
     "typescript": "4.4.3",
-    "wiremock": "2.25.1",
+    "wiremock": "2.33.2",
     "zip-a-folder": "1.1.0"
   },
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.19.5",
     "@types/cypress": "1.1.3",
     "@types/node": "14.17.0",
+    "@types/winston": "2.4.4",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
     "cypress-multi-reporters": "1.5.0",
@@ -56,6 +57,7 @@
     "mocha-junit-reporter": "2.0.0",
     "mochawesome": "6.3.1",
     "mochawesome-merge": "4.2.0",
-    "mochawesome-report-generator": "5.2.0"
+    "mochawesome-report-generator": "5.2.0",
+    "winston": "3.8.1"
   }
 }
