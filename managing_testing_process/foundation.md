@@ -18,8 +18,29 @@ The Resources You Need:
 3. Contractors and consultants. 
 4. External test labs, testing services providers, and vendors.
 
-The Foundation of a Test Project
-===
+## The Foundation of a Test Project
 
+Before start to develop the tests system, the testware, the test environment, and the test process we need to know what
+we _might_ test, then what we _should_ test, and finally what we _can_ test.
 
+### From Microscope to Telescope: Test Granularity
+Ideal Testers: Programmers, BB/Net/System Admins, Electrical/Mechanical Engineers
+Test Granularity: Structural (White-Box)
+=>
+Ideal Testers: Test Engineers, Test Technicians, (Some) Programmers
+Test Granularity: Behavioral (Black-Box)    
+=>
+Ideal Testers: Tech Support/Help Desk, Sales/Marketing, Business Analysts/Users
+Test Granularity: Live, (Alpha, Beta, or Acceptance)
 
+_Structural (White-Box) Tests_ - find bugs in low-level structural elements such as lines of code, database schemas,
+chips, subassemblies, and interfaces. The tester bases structural tests on **how a system operates**, involves a detailed
+technical knowledge of the system. <b>
+_Behavioral (Black-Box) Tests_ - find bugs in high-level operations, such as major features, operational profiles, and
+customer scenarios, **what a system should do**. Behavioral testing involves a detailed understanding of the application
+domain, the business problem that the system solves, and the mission the system serves. <b>
+_Live Tests_ - involve putting customers, content experts, early adopters, and other end users in front of the system.
+Live tests can follow general scripts or checklists, but live tests are often ad hoc (worst case) or exploratory
+(best case).
+
+### Test Phases
