@@ -20,7 +20,7 @@ The Resources You Need:
 
 ## The Foundation of a Test Project
 
-Before start to develop the tests system, the testware, the test environment, and the test process we need to know what
+Before start to develop the test system, the test-ware, the test environment, and the test process we need to know what
 we _might_ test, then what we _should_ test, and finally what we _can_ test.
 
 ### From Microscope to Telescope: Test Granularity
@@ -44,3 +44,33 @@ Live tests can follow general scripts or checklists, but live tests are often ad
 (best case).
 
 ### Test Phases
+1. **Unit testing** \
+Should focus on the smallest construct that one could meaningfully test in isolation, function, class, etc.
+2. **Component or Subsystem Testing** \
+Focus on the components of the system. Component testing applies to some collection of units that provide some defined
+set of capabilities within the system.
+3. **Integration or Product Testing** \
+Integration or product testing focuses on the relationships and interfaces between pairs of components and groups of
+components in the system under test. Would be great if integration testing can happen in coordination with the
+project-level activity of integrating the entire system — putting all the constituent components together, a few
+components at a time. The staging of integration and integration testing must follow the same plan — build plan — so that
+the right set of components comes together in the right way and at the right time. \
+If your product is a set of standalone utilities that don’t share data or invoke one another, you can probably skip this.
+However, if the product uses APIs or a HW bus to coordinate activities, share data, and pass control - you need this.
+4. **System Testing** \
+System testing covers the entire system, fully integrated. Sometimes, as in installation and usability testing, these
+tests look at the system from a customer or end-user point of view. Other times, these tests stress particular aspects
+of the system that users might not notice, but are critical to proper system behavior. \
+Except some blocks of functionality system testing covers installation, performance, compatibility, performance, etc.
+5. **Acceptance or User-Acceptance Testing** \
+The test objective is to demonstrate that the system meets requirements. When successful it obligates a buyer to accept
+a system, triggers deployment to prod. Acceptance tests can be alpha (executed by in-house users) and beta tests (executed
+by current and potential customers), focus is usually on typical product-usage scenarios, not extreme conditions.
+
+Benefits of staged testing:
+1. Starts early;
+2. Finds different level of bugs that can be fixed faster;
+3. Measuring testing/fixing efforts is easier, since it leveled;
+4. Clear process and milestones.
+
+## What we Should Test?
