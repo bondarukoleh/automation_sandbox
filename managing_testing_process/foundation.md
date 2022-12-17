@@ -73,4 +73,60 @@ Benefits of staged testing:
 3. Measuring testing/fixing efforts is easier, since it leveled;
 4. Clear process and milestones.
 
-## What we Should Test?
+## What we should test?
+After we understood what areas to test, next we figure out what should we test in those areas. For that we need to 
+understand what is quality fot the project. \
+Testing should cover the main features, those that determine customer and user satisfaction, and try to find as many
+as possible of the bugs that would result in dissatisfaction. \
+Developers are exposed to various risks related to not implementing all the satisfying features and to implementing
+some of them improperly. These risks can collectively be called **quality risks**. The process of testing should allow
+the test organization to assess the quality risks and to understand the failures that exist in the system under test.
+Testing looks for situations in which a product fails to meet customers’ or users’ reasonable expectations in specific
+areas, terms like functionality, usability, reliability, performance, and serviceability matters.
+Besides that testers should cover **Customer usage scenarios**.
+
+>Nice thought: As people use a product — a car, an espresso machine, a bar of soap — they form opinions about how well 
+that product fulfills their expectations. These impressions, good or bad, become their **experience of quality** for
+that product. Test teams try to assess, in advance, customers’ experiences of quality.
+
+### How to analyze quality risks?
+A bit about risk-based testing. **Risk** generally means the possibility of a negative or undesirable outcome or event.
+When the primary effect of a potential problem is to impact project success, we can call it a _project risk_, e.g.
+a possible test environment problem that could delay completion of a project is a project risk. \
+When the primary effect of a potential problem is on the quality of the product itself, we can call it a _quality risk_.
+e.g. a possible performance defect that could cause a system to respond slowly during normal operation is a quality risk.
+
+Risks differ in terms of importance, which I refer to as the _level of risk_. Basically it considers two factors: \
+- The likelihood of the problem occurring
+- The impact of the problem should it occur
+
+To determine likelihood, you generally focus on technical considerations, such as the programming language, network 
+throughput, and so forth. To determine impact, you generally focus on business considerations, such as the potential
+financial impact of a problem, the frequency with which users or customers will encounter a problem, and so forth. 
+
+Risk-based testing strategies start with quality risk analysis to identify risk items and determine the level of risk
+for each risk item. You then address the quality risks in four ways:
+- Allocation of effort. During planning, preparation, and execution of testing, you allocate effort for each quality
+risk item based on the level of risk;
+- Test sequencing. During planning, preparation, and execution of testing, test managers and testers attack the risks
+in risk priority order, starting with the most important quality risks first and working their way down to the less
+important ones;
+- Test triage. If needed during test execution, should management reduce the time or resources available for testing,
+you can delete tests from the test plan in reverse-risk priority order, starting with the least important tests;
+- Reporting test results. Test managers should report test results in terms of risk;
+
+### Properties and Benefits of Analytical Risk-Based Testing
+Analytical risk-based testing has six properties, but two are most important:
+- The testing effort is proportional to the level of risk; The higher the level of risk, the more test effort you expend
+  to develop and to execute test cases for that risk item.
+- Test tasks are sequenced based on risk. The higher the level of risk for any risk item, the earlier you develop the 
+  test cases for that risk item.
+- overall level of residual quality risk goes down as test execution continues;
+- risk-based test results reporting, means that you report your test results not only in terms of bugs (found and fixed)
+  and test cases (run, passed, and failed), but also in terms of the overall level of residual quality risk.
+- intelligent test triage
+- self-correction of errors in the risk analysis. Early analysis will often be based on incorrect assumptions, so you can
+  update risks constantly.
+
+### Quality Risk Analysis with Checklists
+
