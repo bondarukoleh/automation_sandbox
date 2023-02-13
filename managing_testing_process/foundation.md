@@ -24,21 +24,17 @@ Before start to develop the test system, the test-ware, the test environment, an
 we _might_ test, then what we _should_ test, and finally what we _can_ test.
 
 ### From Microscope to Telescope: Test Granularity
-Ideal Testers: Programmers, BB/Net/System Admins, Electrical/Mechanical Engineers
-Test Granularity: Structural (White-Box)
-=>
-Ideal Testers: Test Engineers, Test Technicians, (Some) Programmers
-Test Granularity: Behavioral (Black-Box)    
-=>
-Ideal Testers: Tech Support/Help Desk, Sales/Marketing, Business Analysts/Users
+Ideal Testers: Programmers, BB/Net/System Admins, Electrical/Mechanical Engineers \
+Test Granularity: Structural (White-Box) => Ideal Testers: Test Engineers, Test Technicians, (Some) Programmers \
+Test Granularity: Behavioral (Black-Box) => Ideal Testers: Tech Support/Help Desk, Sales/Marketing, Business Analysts/Users \
 Test Granularity: Live, (Alpha, Beta, or Acceptance)
 
 _Structural (White-Box) Tests_ - find bugs in low-level structural elements such as lines of code, database schemas,
 chips, subassemblies, and interfaces. The tester bases structural tests on **how a system operates**, involves a detailed
-technical knowledge of the system. <b>
+technical knowledge of the system. \
 _Behavioral (Black-Box) Tests_ - find bugs in high-level operations, such as major features, operational profiles, and
 customer scenarios, **what a system should do**. Behavioral testing involves a detailed understanding of the application
-domain, the business problem that the system solves, and the mission the system serves. <b>
+domain, the business problem that the system solves, and the mission the system serves. \
 _Live Tests_ - involve putting customers, content experts, early adopters, and other end users in front of the system.
 Live tests can follow general scripts or checklists, but live tests are often ad hoc (worst case) or exploratory
 (best case).
@@ -96,7 +92,7 @@ a possible test environment problem that could delay completion of a project is 
 When the primary effect of a potential problem is on the quality of the product itself, we can call it a _quality risk_.
 e.g. a possible performance defect that could cause a system to respond slowly during normal operation is a quality risk.
 
-Risks differ in terms of importance, which I refer to as the _level of risk_. Basically it considers two factors: \
+Risks differ in terms of importance, which I refer to as the _level of risk_. Basically it considers two factors:
 - The likelihood of the problem occurring
 - The impact of the problem should it occur
 
@@ -129,4 +125,35 @@ Analytical risk-based testing has six properties, but two are most important:
   update risks constantly.
 
 ### Quality Risk Analysis with Checklists
+During **unit** and component testing, the following major quality risk categories apply:
+- State. Component(s) implement what is called a *state machine*. Incoming events cause a state machine to transition
+through clearly defined states. State machines present a variety of quality risks related both to the state machine as
+a whole and to the individual states. State transitions conditions, correct outputs from state transition, handling legal
+and illegal event/condition combinations.
+- Transactions. Components that have transactions with the user or with other components present various risks.
+For example, creating a new file is a transaction in SpeedyWriter. Can the user select the appropriate file
+template? How does the product respond to illegal file names?
+- Code coverage. Some of the features has hard to reproduce states, you should put effort to test them.
+- Data-flow coverage. Transfer of information parameters, shared (global) data space, or DB — from one component to another.
+- Functionality. Functional quality risks are generally of two types: function behaves improperly, or properly but has undesirable side effects.
+- User interface. Understandable prompts and messages, clear control flows, and appropriate color schemes and graphics.
+- Mechanical life. Any object that can be flexed or moved has a limit to the number of motions it can endure: keyboard keys break, buttons snap off, latches crack, and contacts fail.
+- Signal quality. Any circuit that processes data, whether digital or analog, is subject to the constraints imposed by signal quality. Lead times, lag times, rise times, fall times, noise, spikes, transients, and the like can be out of spec, causing a component to fail.
 
+During **integration** testing, the following major quality risk categories apply: 
+- Component or subsystem interfaces. Every API, method, function, bus represents an opportunity for misunderstandings
+between the two (or more) component development engineers.
+- Functionality. Wrong action, or the right action with the wrong side effect. Here you focus on functionality that
+requires the correct operation of two or more components or a flow of data between them.
+- Capacity and volume. The capacities (static) and volumes (dynamic) parts of computer as a Hardware and Software. Network
+card handling realistic traffic levels, disk subsystem deal with realistic loads, data-storage capability sufficient?
+- Error/disaster handling and recovery. Undesirable events happen. PCs lock up. Servers crash. Networks drop packets.
+Hard drives die, black out, etc.
+- Data quality. If your product stores, retrieves, and shares significant amounts of (delicate) data you should consider
+testing whether the product can handle that data reliably. System shouldn't damage and corrupt the data if something goes
+wrong.
+- Performance. As with capacity and volume, performance concerns apply to most subsystems or components in a product.
+Performance is not only ‘‘how many per second,’’ but also ‘‘how long.’’
+- User interface. As more pieces of real functionality are integrated into the system, you can start to test these through the user interface.
+
+During **system and acceptance** tests, the following major quality risk categories apply:
