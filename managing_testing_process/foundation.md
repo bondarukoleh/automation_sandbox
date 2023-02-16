@@ -157,3 +157,31 @@ Performance is not only ‘‘how many per second,’’ but also ‘‘how long
 - User interface. As more pieces of real functionality are integrated into the system, you can start to test these through the user interface.
 
 During **system and acceptance** tests, the following major quality risk categories apply:
+ - Functionality. Consider functionality in terms of whole sequences of end-user operations or an entire area of
+functionality.
+- User interface.
+- States. State machines can exist at the system level as well as at the component level.
+- Transactions. Transaction handling can also occur at the system level.
+- Data quality.
+- Operations. Complex systems often require administrators; databases, networks, and servers come to mind.
+Can you back up and restore files? Can you migrate the system from a Windows server to a Linux server?
+Can you add an external RAID array? Can you add memory? Can you add a second LAN card?
+- Capacity and volume.
+- Reliability, availability, and stability.
+- Error/disaster handling and recovery. Focus on the external failures.
+- Stress. This risk category is often an amalgam of capacity, volume, reliability, stability, and error/disaster handling and recovery.
+- Performance.
+- Date and time handling. Different/Multiple time zones, or even multiple time zones if it is a distributed system.
+- Localization. Different languages, special letters. Different volts (220/110, 50/60 hertz). There are cultural issues
+and taboos.
+- Networked and distributed environments. Time zones, telephone standards, etc.
+- Configuration options and compatibility. Drivers, libraries, and software, will Product talk to all the printers, network drivers, coexisting with other applications.
+- Standards compliance. In the hardware world, you might need to consider legal and market standards such as UL, FCC, CE, and others that might be required for your target market.
+- Security.
+- Environment.
+- Power input, consumption, and output.
+- Shock, vibration, and drop.
+- Installation, cut-over, setup, and initial configuration.
+- Documentation and packaging. 
+- Maintainability. Versioning, online upgrades, etc.
+- Alpha, beta, and other live tests.
