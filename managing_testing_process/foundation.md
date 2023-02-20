@@ -185,3 +185,30 @@ and taboos.
 - Documentation and packaging. 
 - Maintainability. Versioning, online upgrades, etc.
 - Alpha, beta, and other live tests.
+
+ISO 9126 Standard says:
+Functionality, Reliability, Usability, Efficiency, Maintainability, Portability.
+
+### **Identify and Assess** quality risks
+
+#### Steps:
+1. *Select a technique and template*. Technic may vary depends on the level of formality involved and in the amount of documentation. But it's always a good to start with simple one, just to begin.
+2. *Assemble a cross-functional team to perform the quality risk analysis.* You need technical stakeholders and business stakeholders. Technical stakeholders understand what is likely to go wrong with the system. Business stakeholders 
+understands the impact of potential problems in the system. This is important step, risk-based testing uses quality risk
+analysis to decide what to test, in what order, and how much, that means something will be definitely avoided from being
+tested. The team should include the project manager and the development managers to keep them on track and clarify things.
+3. *Perform the quality risk analysis.* two general approaches to this. Hold a brainstorming session with the entire team,
+use the earlier checklists and facilitate the identification and furthermore assessing quality risk items, it's a time consuming session. The other one is to hold a sequence of one-on-one or small-group interviews with distinct stakeholder groups.
+Afterwards with a smaller focus group of stakeholders you review the list and assess the level of risk for each risk item.
+Capture the results in the template (spreadsheet).
+4. *Verify the distribution of the risk-level ratings* to ensure adequate dispersal, and adjust the ratings if necessary.
+One of the challenges of quality risk analysis, is set the initial risk-level assessments that screws differentiating
+the levels further risks. Therefore, you should plan to check the distribution of the risk-level ratings.
+5. *Traceability between specs, docs, requirements and risks.* This process might result in the discovery of additional
+risk items that you haven't considered before.
+6. *Traceability between test cases and risks.* Besides new risks, you can find significant areas of under-testing and over-testing, relative to the level of risk associated with various quality risk items.
+7. *Commit the documents* into whatever repository you use for test system documents. You’ll adjust it later at major
+project milestones, but for the time being you have a solid foundation for your test estimate. E-mail the it at least 
+to participants in the quality risk analysis.
+
+#### Quality risk analysis Techniques and Templates
