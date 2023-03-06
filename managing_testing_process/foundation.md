@@ -245,7 +245,7 @@ executing tests against this risk item.
 Fundamentally, FMEA is for understanding and prioritizing possible failure modes in system functions, features, 
 attributes, behaviors, components, and interfaces. Also provides a means of preventive defect reduction and tracking
 process improvements.
-![FMEA sheet](managing_testing_process/media/FMEA.PNG)
+![FMEA sheet](/managing_testing_process/media/FMEA.PNG)
 
 **Details:**
 - **System Function or Feature** You enter a concise (short) description of a system function.
@@ -255,18 +255,18 @@ failure modes.
 - **Potential Effect(s) of Failure** taken affect for the user
 - **Critical?** Consequences for the user. Is the feature becomes unusable if this failure mode occurs?
 - **Severity** Capture the effect of the failure on the *system*:
-  - 1. Loss of data, hardware damage, or a safety issue
-  - 2. Loss of functionality with no workaround
-  - 3. Loss of functionality with a workaround
-  - 4. Partial loss of functionality
-  - 5. Cosmetic or trivial
+  - 1 Loss of data, hardware damage, or a safety issue
+  - 2 Loss of functionality with no workaround
+  - 3 Loss of functionality with a workaround
+  - 4 Partial loss of functionality
+  - 5 Cosmetic or trivial
 - **Potential Cause(s) of Failure** possible factors that might trigger the failure
 - **Priority** Capture the effect of the failure on the *user*:
-  - 1. Complete loss of system value
-  - 2. Unacceptable loss of system value
-  - 3. Possibly acceptable reduction in system value
-  - 4. Acceptable reduction in system value
-  - 5. Negligible reduction in system value
+  - 1 Complete loss of system value
+  - 2 Unacceptable loss of system value
+  - 3 Possibly acceptable reduction in system value
+  - 4 Acceptable reduction in system value
+  - 5 Negligible reduction in system value
   You should rely on input from sales, marketing, technical support, and business analysts.
 - **Detection Method(s)** Currently existing method or procedure, that can find the problem before it affects users,
 excluding any future actions (such as creating and executing test suites) you might perform to catch it. (If you do not
@@ -275,11 +275,11 @@ exclude the tests you might create, the next column will be skewed.)
   - a) existence in the product (e.g., based on technical risk factors such as complexity and defect history);
   - b) escape from the current development process;
   - c) effect on user actions. This example uses the following 1-to-5 scale:
-    - 1. Certain to affect all users
-    - 2. Likely to impact some users
-    - 3. Possible impact on some users
-    - 4. Limited impact to few users
-    - 5. Unimaginable in actual usage
+    - 1 Certain to affect all users
+    - 2 Likely to impact some users
+    - 3 Possible impact on some users
+    - 4 Limited impact to few users
+    - 5 Unimaginable in actual usage
   This number requires both technical judgment and an understanding of the user community, which makes participation by
   programmers and other engineers along with business analysts, technical support, marketing and sales important.
 - **Risk Priority Number (RPN)** is the product of the *severity*, the *priority*, and the *likelihood*.
