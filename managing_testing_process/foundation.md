@@ -212,3 +212,88 @@ project milestones, but for the time being you have a solid foundation for your 
 to participants in the quality risk analysis.
 
 #### Quality risk analysis Techniques and Templates
+The two most common are the *informal technique* and *failure mode and effect analysis* (FMEA).
+
+***Informal quality risk analysis:*** \
+It's a table with basic columns: **#, Functionality under risk, Likelihood, Impact, Priority, Testing, Tracing**
+1. Likelihood. How likely does the team feel it is that one or more bugs will exist for this item? 1 - 5 scale. 
+  - Very high. Such bugs are almost certain to occur.
+  - High. Such bugs are more likely to occur than not to occur.
+  - Medium. Such bugs have about an even chance of occurring as not occurring.
+  - Low. Such bugs are less likely to occur than not to occur.
+  - Very low. Such bugs are almost certain not to occur.
+2. Impact. How bad would it impact the business if we delivered one or more bugs for this item to the customers?
+  - Very high. Such bugs would render the system unsalable.
+  - High. Such bugs would seriously impair users and significantly reduce sales.
+  - Medium. Such bugs would inconvenience some users and marginally reduce sales.
+  - Low. Such bugs would inconvenience a few users and might reduce sales.
+  - Very low. Such bugs would only rarely affect users and would not reduce sales.
+3. Priority Number aggregate level of risk. You can calculates the number by multiplying *likelihood* and *impact*. Or
+customize it somehow. You run the tests correspondent to this number, test case inherits the risk from this table, 
+starting with the tests with high risk, if you need reduce number of tests due to pressure, you remove ones with lower
+risk.
+4. Testing. Based on the risk priority number, what relative amount of test effort should we put into developing and
+executing tests against this risk item.
+  - Extensive. Run a large number of tests that exercise many combinations and variations of interesting conditions.
+  - Broad. Run a medium number of tests that exercise many different interesting conditions for the risk item.
+  - Cursory. Run a small number of tests that sample the most interesting conditions for the risk item.
+  - Opportunity. Leverage other tests to explore the risk item with minimal effort and only if the opportunity is there.
+  - Report bugs. Only report bugs observed for this risk item if discovered during other tests.
+5. Tracing. Any tracing columns with requirements or existing TCs.
+
+***failure mode and effect analysis (FMEA):*** \
+Fundamentally, FMEA is for understanding and prioritizing possible failure modes in system functions, features, 
+attributes, behaviors, components, and interfaces. Also provides a means of preventive defect reduction and tracking
+process improvements.
+![FMEA sheet](managing_testing_process\media\FMEA.PNG)
+
+**Details:** \
+- **System Function or Feature** You enter a concise (short) description of a system function.
+- **Potential Failure Mode(s)-Quality Risk(s)** ways of failure for each function or feature, these are
+associated with the loss of a specific system function. Each specific function or feature can have multiple
+failure modes.
+- **Potential Effect(s) of Failure** taken affect for the user
+- **Critical?** Consequences for the user. Is the feature becomes unusable if this failure mode occurs?
+- **Severity** Capture the effect of the failure on the *system*:
+  1. Loss of data, hardware damage, or a safety issue
+  2. Loss of functionality with no workaround
+  3. Loss of functionality with a workaround
+  4. Partial loss of functionality
+  5. Cosmetic or trivial
+- **Potential Cause(s) of Failure** possible factors that might trigger the failure
+- **Priority** Capture the effect of the failure on the *user*:
+  1. Complete loss of system value
+  2. Unacceptable loss of system value
+  3. Possibly acceptable reduction in system value
+  4. Acceptable reduction in system value
+  5. Negligible reduction in system value
+  You should rely on input from sales, marketing, technical support, and business analysts.
+- **Detection Method(s)** Currently existing method or procedure, that can find the problem before it affects users,
+excluding any future actions (such as creating and executing test suites) you might perform to catch it. (If you do not
+exclude the tests you might create, the next column will be skewed.)
+- **Likelihood** a number that represents the vulnerability of the system, in terms of:
+  - a) existence in the product (e.g., based on technical risk factors such as complexity and defect history);
+  - b) escape from the current development process;
+  - c) effect on user actions. This example uses the following 1-to-5 scale:
+    1. Certain to affect all users
+    2. Likely to impact some users
+    3. Possible impact on some users
+    4. Limited impact to few users
+    5. Unimaginable in actual usage
+  This number requires both technical judgment and an understanding of the user community, which makes participation by
+  programmers and other engineers along with business analysts, technical support, marketing and sales important.
+- **Risk Priority Number (RPN)** is the product of the *severity*, the *priority*, and the *likelihood*.
+- **Recommended Action** one or more simple action items for each potential effect to reduce the related risk.
+- **Who/When?** who is responsible for each recommended action and when they are responsible for it (e.g. which test phase).
+- **References** for more information about the quality risk. Involves product specifications, a requirements document, etc.
+- **Action Results** record the influence of the actions taken on the priority, severity, likelihood, and RPN values.
+  You will use these columns after you have implemented your tests, not during the initial FMEA.
+
+A few pitfalls in using the FMEA method. It's a risk that you can become distracted by quality risks 
+that lie outside the scope of the test project, e.g. operating-system bugs or underlying hardware failures, possible
+low-level failures in drives or chips. You need to keep it dry, if development team or some other group cannot fix or 
+at least address potential bugs - it’s **out of scope**. The resulting FMEA document will be large. Be sure that you
+are ready to maintain this document after you create it. Otherwise, you won’t be able to use it to focus test
+development and execution, which defeats the purpose.
+
+#### Tips and Challenges of quality risk Analysis
