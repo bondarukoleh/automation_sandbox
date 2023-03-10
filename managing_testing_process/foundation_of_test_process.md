@@ -296,4 +296,25 @@ at least address potential bugs - it’s **out of scope**. The resulting FMEA do
 are ready to maintain this document after you create it. Otherwise, you won’t be able to use it to focus test
 development and execution, which defeats the purpose.
 
-#### Tips and Challenges of quality risk Analysis
+**Tips and Challenges of quality risk Analysis**
+- Keep the proper degree of details. If you think that risk should be separated - do it only if you see that there might
+be separation between different levels of risk. Too much details - hard to manage, too little - hard to prioritize properly.
+- Results of the quality risk is not ultimate truth, it's a collective opinion of the risk group, don't forget.
+- If you can’t reach consensus on risk, escalate to some decision-maker, responsible for the quality of the delivery.
+- If priority inflation is happening, ask about extra time, budget, ot not releasing the feature at all.
+- Any risk should be explained, why it's so high or low.
+
+
+## What You Can Test: Schedule, Resources, and Budget
+Ok, so we've created the list of critical quality risks documents that are the essential requirements for my test effort.
+Now цу need to figure out a test schedule and a budget that will allow me to test the scariest risks.
+
+> ‘‘Schedule, cost, and quality — pick two.’’
+
+![time-cost-quality](/managing_testing_process/media/time_cost_quality.PNG)
+
+These refinements balance features, schedule, cost, and quality. Once implementation begins, the feature set becomes more
+rigid, the schedule more painful to change, and budget increases less likely. The two lines that show the schedule and
+the cost determine the third line, quality, that completes the triangle.
+
+### Shoehorning: Fitting a Test Schedule into the Project
