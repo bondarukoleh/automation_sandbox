@@ -306,8 +306,9 @@ be separation between different levels of risk. Too much details - hard to manag
 
 
 ## What You Can Test: Schedule, Resources, and Budget
-Ok, so we've created the list of critical quality risks documents that are the essential requirements for my test effort.
-Now цу need to figure out a test schedule and a budget that will allow me to test the scariest risks.
+We have a prioritized outline of quality risks. This is analogous to the requirements for the overall project. The list
+of critical quality risks documents the essential requirements for my test effort. So I need to figure out a test
+schedule and a budget that will allow me to test the scariest risks.
 
 > ‘‘Schedule, cost, and quality — pick two.’’
 
@@ -317,4 +318,35 @@ These refinements balance features, schedule, cost, and quality. Once implementa
 rigid, the schedule more painful to change, and budget increases less likely. The two lines that show the schedule and
 the cost determine the third line, quality, that completes the triangle.
 
-### Shoehorning: Fitting a Test Schedule into the Project
+### Fitting a Test Schedule into the Project
+At the beginning you have a ship date and a list of product features. You can use a work-breakdown structure, which is
+a top-down approach, start with big categories of work and iteratively decompose them into discrete tasks, especially 
+at the early stages when I don’t have a lot of details. \
+The standard test process lifecycle is:
+1. Test planning. (testing scope, approach, researching, scheduling)
+2. Test analysis and design. (risks, requirements, features to test, test design)
+3. Test implementation and Execution (develop and priorities, creating test suites,  execution, re-testing, regression)
+4. Evaluating exit criteria (reporting, and analysis test results)
+5. Test closure activities (improving, work analysis)
+
+But since we've done part of the "Test analysis and design" and we are only in beginning of our project we'll adjust it
+a bit. Breaking the test effort into major phases such as these:
+ - Planning
+ - Configuration (getting the necessary hardware and other resources and setting up the test lab)
+ - Staffing (if applicable)
+ - Test development (building/deploying the test tools, creating the test suites/cases library, reporting tools, and
+  documenting the test process)
+ - Test execution (running the tests, recording test status, and reporting results)
+
+Next, we divide each phase into activities: Within the "Planning" category, for example, we set up activities such as
+defining quality risks, creating the schedule and the budget, writing test plans, and selecting test tools. \
+After that, we decompose each activity into tasks, and then subtasks if necessary. This decomposition continues until
+I have constituent tasks that are one or two days long and are the responsibility of one person.
+Small task definitions allow to know  weather we're on track during the project. Big tasks can get dangerously out of
+control, and I won’t discover such problems until a long period (a week or more). \
+Configuration phase depend on the test environment we need, list of quality risks usually can given me some ideas here. \
+Development, we can separate major tasks for each test phase, and create a separate suites for each test phase. Test
+suite development should proceed in priority order. Don't forget the documentation about how the test system works, both
+in terms of the design and functionality of the testware and the way the test process uses that testware to find bugs. \
+Execution, two main things: how long will it take to run all the tests once? and how many times will I need to run the
+tests against successive test releases to find all the important bugs and subsequently confirm the fixing of those bugs?
