@@ -348,5 +348,77 @@ Configuration phase depend on the test environment we need, list of quality risk
 Development, we can separate major tasks for each test phase, and create a separate suites for each test phase. Test
 suite development should proceed in priority order. Don't forget the documentation about how the test system works, both
 in terms of the design and functionality of the testware and the way the test process uses that testware to find bugs. \
-Execution, two main things: how long will it take to run all the tests once? and how many times will I need to run the
-tests against successive test releases to find all the important bugs and subsequently confirm the fixing of those bugs?
+Execution, two main things: how long will it take to run all the tests once? and how many times do we need to run the
+tests against the release to find and subsequently confirm bug fixes?
+
+Estimation of execution on paper should be based on experience how the team work during last few months at least.
+But if it's a new project and new team, you still can do some math. Let's say test phase of the feature release takes 
+approximate 2 person-weeks and you have 2 allocated testers to do it. So we can say that 2 persons can test a developed
+feature in one week. Then based on previous experience let's assume that you need three times to run the tests before 
+release the feature. To find bugs, retest fixed bugs and find more, and retest the latest fixes. So we'll get 2 testers,
+busy for 3 weeks to release a feature.
+
+![release_cycles](/managing_testing_process/media/release_cycles.PNG)
+
+The **time required to run the tests** is something a test manager can control and measure with solid estimates of time 
+and effort. On another hand, **the number of cycles** is dependent on many factors outside a test manager control. Quality 
+of the software, the programmers are slow to fix, bug fixes tend to break other areas of the product, etc. those factors
+increases number of test cycles. So you cannot measure it properly if it's a new team. \
+Better assign the entire team to test tasks at the test cycle level of detailing. Single tester assignment to a single
+test case doesn’t work well because we don’t know all the tests we're going to run during this early planning stage,
+so if we account only for the tests we know, we’ll underestimate. Usual rule of thumb is to estimate the test effort,
+increase it by 50 percent for the tests I don’t know about yet, plan on between 20 and 30 hours of testing per tester
+per week. Capture the basic dependencies, e.g. develop a test suite before we can run it, develop feature before start A
+test cycle, but also allocate some extra time into my schedule for the discoveries. It's easier to fight for extra time
+upfront, and not after commitment.
+
+When you create the tasks also assign resources, even if I can’t be complete at this point. \
+Accurate scheduling requires the participation of the actual contributors wherever possible. \
+Test estimation is hard to do perfectly, but not terribly hard to do well. If you follow good project management 
+practices in preparing your work-breakdown structure, don’t forget key tasks, estimate conservatively, don’t overload
+people and resources, involve your entire team in estimation, and focus on key dependencies and deliverables, you
+can construct a draft schedule for your test project that should prove relatively accurate. Also make sure that 
+milestone dates fit within the constraints of the project. As the project proceeds, you track progress against the
+schedule, adding details, adjusting durations, resolving resource conflicts, including more dependencies, and so on.
+Keep it simple to start. Simple schedules are less detailed and accurate but gives overall picture and schedule. If you
+try to create complicated 300-task schedules, you can get lost in the minutiae.
+
+![project_schedule_1](/managing_testing_process/media/project_schedule_1.PNG)
+![project_schedule_2](/managing_testing_process/media/project_schedule_2.PNG)
+
+### Estimating Resources and Creating a Budget
+
+Given a work-breakdown structure with detailed resource allocations, we can create a budget, again using a top-down
+approach. Create a list of resources, starting with general categories such as these:
+- Staff. This category includes permanent employees, contractors, and consultants.
+- Test tools. Code-coverage analyzers, scripting utilities, GUI test automation systems, low-level diagnostic programs,
+  and so forth. Hardware testing can involve oscilloscopes, shock and vibration tables, thermal chambers, and other equipment.
+- Facilities and overhead. Can include travel allowances, lab space, workstations, and infrastructure such as cabling,
+  routers, hubs, bridges, ISDN terminals, and so forth. 
+- Test environment. This category includes the hardware, software, engineering samples, and experimental prototypes.
+- External labs.If intended to use external labs for environmental testing, localization, performance, or other purposes.
+
+Within each category, I list the individual items I will need. If you find it difficult to estimate costs for tools,
+facilities, infrastructure, or the test environment, you can hit the Web or make some telephone calls.
+
+At this point, you can compare each line item against your schedule. When do you start using the resource? How long do
+you use it? Are ramp-up and ramp-down times associated with the resource?
+
+After coming up with the budget, I usually sleep on it and then review it the next day. If the budget contains a few
+gaping holes where I don’t have enough information to even hazard a guess, I’ll be honest and indicate that.
+
+![budget](/managing_testing_process/media/budget.PNG)
+
+With a quality risks list, schedule, and budget, I have a concise package that I can take to management.
+By speaking management’s language, I can address four key questions that will arise:
+- What type of risk management are we buying?
+- How long will it take?
+- What will it cost?
+- What’s the return on investment?
+
+Be flexible. If management insists on reduced costs or a faster schedule (or both), I eliminate tests in reverse priority
+order. If cost is the major concern but I can add a few weeks to the schedule, perhaps I can get by with one less employee. Outsourcing can also reduce costs. I make the case for what I believe needs to be done, but I’m prepared to do less.
+The only taboo is agreeing to do everything I initially proposed to do but in less time and/or for less money, unless
+management wants to cut out the contingency time and money and run a high risk that later discoveries will break my
+budget or schedule. At the end of this negotiation, I have an approved budget and schedule and a mutual understanding of
+the scope and deliverables for my test project.
