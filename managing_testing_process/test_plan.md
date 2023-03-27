@@ -38,13 +38,13 @@ Template scope looks like this:
  - Referenced Documents
  - Frequently Asked Questions
 
-Overview \
+**Overview** \
 Introduce to the test project, what we plan to test, general test approach, goals, methodologies, and objectives.
 We can include simple pictures or charts, concepts of the system architecture under test, the system decomposition for
 component or integration testing, or how this test effort fits into other test efforts that might precede, run
 concurrently, or follow.
 
-Bounds \
+**Bounds** \
 Set boundaries for the test plan by discussing what I will and will not test, defining important terms and acronyms,
 determining where and in what context the test efforts will take place.
 
@@ -59,3 +59,56 @@ Testing has its own terms and phrases. Table with those can help to clarify term
 set the meanings for the terms for the whole process so there won't be misunderstanding in the team.
 
 Setting \
+Describes where I intend to perform the testing (could be different locations) and the way those organizations doing
+the testing relate to the rest of the organization. A good place to show testing in an organization setting.
+
+![setting](/managing_testing_process/media/setting.PNG)
+
+**Quality Risks** \
+If you already have the material you need for this section. You can summarize the quality risk documents you’ve prepared,
+or simply reference them in the test plan.
+
+**Proposed Schedule of Milestones** \
+We can extract these from previous material that we've prepared.
+
+**Transitions** \
+For each test phase, the system under test must satisfy a minimal set of qualifications before the test organization can
+run tests effectively and efficiently, i.e it makes no sense to start extensive user-scenario testing of something if
+basic functionality isn't working. This section should specify the criteria essential for beginning and completing various
+test phases (and for continuing an effective and efficient test process). Usually referred as *entry*, *continuation*,
+and *exit* criteria, respectively. Also *entry, suspension/resumption, and exit* criteria. \
+When you adding those criteria, be aware of what you’re actually saying: ‘‘If someone outside the test group fails to 
+comply with these rules, I’m going to object start of the next phase of testing, ask to stop with testing until needed
+criteria are achieved, or suggest that we not move this project forward.’’ So add really important things here, and 
+criteria that has solid business-related underground to prove to stakeholders that this is important. \
+Criteria could be amount of opened bugs by severity, but also affect on budget, schedule and features. \ 
+During the testing we can divide level of achievement to green, yellow, red. 
+
+*Entry Criteria* (DoR for a test phase) \
+Entry criteria spell out what must happen to allow a system to move into a particular test phase:
+- Are the necessary documentation, design, and requirements information available that will allow testers to operate
+  the system and judge correct behavior?
+- Is the system ready for delivery, in whatever form is appropriate for the test phase in question?
+- Are the supporting utilities, accessories, and prerequisites available in forms that testers can use?
+- Is the system at the appropriate level of quality? Some or all of a previous test phase has been successfully completed?
+  Smoke tests passed?
+- Is the test environment — lab, hardware, software, and system administration support — ready?
+
+![entry](/managing_testing_process/media/entry_criteria.PNG)
+
+*Continuation Criteria* \
+Defines those conditions and situations that must prevail in the testing process to allow testing to continue effectively
+and efficiently. Stable test env, the bug backlog manageable, and the tests for the most part unblocked, installable
+and stable test releases must be delivered regularly and properly; and the change to the system under test must be known
+and controlled.
+
+![continuation](/managing_testing_process/media/continuation.PNG)
+
+*Exit Criteria* \
+Explains how to determine when the project has completed testing. i.e. one exit criterion might be that all the planned
+test cases and the regression tests have been run, or project is functional. In the case of System Test exit criteria —
+provided System Test is the last test phase on your project — these exit criteria often become the criteria by which the customer-ship or deployment decision is made.
+
+![exit](/managing_testing_process/media/exit.PNG)
+
+**Test Development** \
