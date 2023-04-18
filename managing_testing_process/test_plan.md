@@ -112,3 +112,28 @@ provided System Test is the last test phase on your project — these exit crite
 ![exit](/managing_testing_process/media/exit.PNG)
 
 **Test Development** \
+Test projects include work related to design and develop various *test objects*, such as *test cases*, *test tools*, *test procedures*, *test suites*, *automated test scripts*, etc. Collectively, we car refer to these as **test systems**.
+In the section we describe how my test team will create each of those objects. Write detailed test cases, getting test data
+and why we picked those approaches. Automation - test tools, and why we’re using them, developing of the framework, custom
+solutions creation.
+
+**Test Configurations and Environments** \
+This section about which hardware, software, networks, and lab space I will use to perform the testing.
+For these various test systems, I’ll describe whatever important configuration details bear mentioning, as well.
+PCs, test networks, other accessories. Platforms, browsers, servers, clouds, CIs, etc.
+
+**Test Execution** \
+Highlights important factors that affect the test execution, e.g. to run tests, you need to receive some resources and
+systems to test, gather data to track and analyze, and report to your team and managers.
+Level of detailing this section depends on seniority of the qa team, with juniors, the more we nail down the test
+execution during the planning phase, the less confusion we anticipate.
+
+Resources \
+In this section I identify the key participants and their role, contacts.
+
+![exit](/managing_testing_process/media/resouces.PNG)
+
+Also we can add an *escalation process* that defines what happens if some key participants do not or cannot fulfill
+their agreed-upon role. Discussing this with managers, and aware the backup guys.
+
+Test Case and Bug Tracking \
