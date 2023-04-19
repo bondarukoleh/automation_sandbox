@@ -417,7 +417,7 @@ By speaking management’s language, I can address four key questions that will 
 - What’s the return on investment?
 
 Be flexible. If management insists on reduced costs or a faster schedule (or both), I eliminate tests in reverse priority
-order. If cost is the major concern but I can add a few weeks to the schedule, perhaps I can get by with one less employee. Outsourcing can also reduce costs. I make the case for what I believe needs to be done, but I’m prepared to do less.
+order. If co st is the major concern but I can add a few weeks to the schedule, perhaps I can get by with one less employee. Outsourcing can also reduce costs. I make the case for what I believe needs to be done, but I’m prepared to do less.
 The only taboo is agreeing to do everything I initially proposed to do but in less time and/or for less money, unless
 management wants to cut out the contingency time and money and run a high risk that later discoveries will break my
 budget or schedule. At the end of this negotiation, I have an approved budget and schedule and a mutual understanding of

@@ -137,3 +137,38 @@ Also we can add an *escalation process* that defines what happens if some key pa
 their agreed-upon role. Discussing this with managers, and aware the backup guys.
 
 Test Case and Bug Tracking \
+Describes the systems used to manage and track test cases and bugs. Process the team uses to manage the bugs, and other
+communication channels to other teams such as development, management.
+
+Bug Isolation and Classification \
+How we isolate bugs and to classify bug reports. Isolating - experiment with the system to find connected variables,
+causal or otherwise. It’s important to be explicit about bug isolation. Otherwise, testers end up helping with debugging,
+can be occupied for a long time with very little to show for it in terms of test coverage. \
+Classifying a bug report puts it to a particular category that indicates how the bug should be communicated and handled.
+- Requirements failure.
+- Nonrequirements failure. (significantly affects the quality of the system in unacceptable ways)
+- Exception requested. A failure, but the programmers believe that it will not significantly affect the customers’ experiences
+- External failure. Issue from a factor or factors external to or beyond the control of the system under test.
+- Test failure. The programmers believe that the test has returned a spurious or invalid error.
+
+Rather than classifying bugs, there is a bug triage process to assign bug priority and determine which bugs the project
+team must fix prior to release. In that case, you might want to describe that process here.
+
+Test Release Management \
+One of the major interfaces between the overall project and testing occurs when new revisions, builds, and components
+are submitted to the test team for testing. In the absence of a predefined plan for this - absolute chaos.
+So here is a place to define the key elements of the test release process that can affect my effort.
+In the ideal case, we try to create a test release process like this:
+![release_cycles](/managing_testing_process/media/release_cycles.PNG)
+
+Predictable timing is important, once a week, has worked well on most projects.
+Once-a-week test releases give me time to complete some scheduled tests and do some exploratory testing as part of each
+test cycle, rather than just doing confirmation testing of the bug fixes in that test release.
+More frequently often leaves test teams very little time for anything but confirmation testing the fixes.
+Less frequently can introduce major regressions and other changes.
+
+Every new release of a software or hardware component into the test lab should have a release (or revision) number or
+identifier attached. This identifier is essential so that testers can determine which version of the system contains
+a bug, which version fixes that bug, which pieces are compatible with other pieces, and which versions you have tested.
+
+You should also get release notes with the release...
