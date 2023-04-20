@@ -171,4 +171,22 @@ Every new release of a software or hardware component into the test lab should h
 identifier attached. This identifier is essential so that testers can determine which version of the system contains
 a bug, which version fixes that bug, which pieces are compatible with other pieces, and which versions you have tested.
 
-You should also get release notes with the release...
+You should also get release notes with the release. These release notes should specify which bugs were fixed, what
+changes were made, how the changes will affect system behavior, and so forth. This is especially true for complex 
+systems that interface with other systems, since your schemes and API has changed - in this way you can at least
+warn them. Also unified docs and end release product format is helpful.
+
+Test Cycles \
+Test cycle - running one, some, or all of the test suites planned for a given test phase. A single test release of the
+system under test. Generally, new test releases occur during a test phase, triggering another test cycle. This section
+For example, if test suites 3.1 through 3.5 are planned for a three-cycle system test phase, the first cycle could have
+3.1 and 3.2; the second cycle - 3.3, 3.4, 3.5; and the third cycle, all from 3.1 - 3.5. Any given test phase involves
+at least one test cycle through the test suites planned for that phase. Each subsequent cycle generally involves a new
+release of increment. In the section you should spell out your specific assumptions and estimates about the number,
+timing, and arrangement of test cycles.
+
+Test Hours \
+If I need to define the specific hours of testing. Multiple shifts to speed up the process, 16 or 24 hours a day.
+Or your team is flexible-hours policy.
+
+**Risks and Contingencies** \
