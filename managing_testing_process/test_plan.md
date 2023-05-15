@@ -190,3 +190,37 @@ If I need to define the specific hours of testing. Multiple shifts to speed up t
 Or your team is flexible-hours policy.
 
 **Risks and Contingencies** \
+Identify the key project risks that could affect testing and to determine how you’ll deal with those risks.
+For any risk, you have four options:
+- Mitigation. Taking steps in advance that reduce the likelihood or impact of the event or outcome.
+- Contingency. Being ready to act, should the risk become an actual event or outcome, to reduce its impact.
+- Transfer. Get stakeholder to accept the impact of the risk should it become an actual event or outcome.
+- Accept or ignore: Doing nothing (better work if the risk is low).
+
+Possible risks:
+- Logistics or product quality problems. Solution - careful test and project planning, test design.
+- Uninstallable test deliverables - well done CI and night builds with smoke test or sanity test.
+- Excessive change in the requirements, design, implementation - robust test design and lightweight test documentation,
+  change control processes, defined escalation processes.
+- Insufficient test environments - robust dev env, escalation process, devops on site.
+- Gaps in test coverage - reactive testing (bug hunts, software attacks, and exploratory testing), continuous test
+  improvements
+- Problems in test start dates and releases - drop less priority tests, escalation to management with a request for more
+  test time or elimination of untested features.
+
+**Change History** \
+This part of the document records the changes and revisions that have been made to the test plan itself to this point. 
+
+**Referenced Documents** \
+As a rule, a test plan refers to other documents such as design specifications, requirements, the test suites, any
+quality risk analysis documents, and other pertinent information.
+
+**Frequently Asked Questions** \
+Many of these questions entail describing the importance of the escalation process or some other delicate matter.
+
+The IEEE 829 Template \
+The plan above is a bit different, but maybe we need to implement standard somewhere.
+
+![IEEE_829](/managing_testing_process/media/IEEE_829.PNG)
+
+### Selling the Plan
