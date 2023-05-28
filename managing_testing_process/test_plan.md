@@ -224,3 +224,10 @@ The plan above is a bit different, but maybe we need to implement standard somew
 ![IEEE_829](/managing_testing_process/media/IEEE_829.PNG)
 
 ### Selling the Plan
+Before I hold a review, I email the test plan. Invite every manager who is directly affected by the plan — usually the
+development manager, the project manager, the product manager, the build/release manager, the technical support manager,
+the sales and marketing managers, the business analysts or other in-house domain experts, lead test engineer on the
+project. Goal is to leave the meeting with a marked-up copy of the test plan that will enable me to produce a final version. Shortly after the review, I make the requested changes to the document and re-circulate it, this time marked as ‘‘Released
+for Execution’’ or ‘‘Release 1.0’’ to flag the fact that we intend to proceed according to this plan.
+
+Say exactly who is to do what and when in plan is better, and lefts less space to surprises.
