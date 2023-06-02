@@ -27,3 +27,21 @@ that fits the project and that achieves the mission as appropriate to the projec
 test strategy in a way that defines how the testware supports the guiding principles of testing in the test strategy.
 
 ### The Action Components: Definitions
+Three elements of the testware: the test tools, the test case library, and the test suites.
+These are the action components, the testware parts that do something. \
+A test tool can be any general-purpose hardware, software, or hardware/software system used during test case execution
+to set up or tear down the test environment, to create test conditions, or to measure test results.
+
+![scope](/managing_testing_process/media/action_components.PNG)
+
+Test case library, which is a collection of independent, reusable test cases. \
+Each test case consists of a sequence of three stages:
+ - The test **case setup** describes the steps needed to configure the test environment.
+ - The point of running a test case is to create a set of **test conditions**. The creation of these conditions allows
+ the tester to assess the quality of the system in relation to particular risks to system quality and customer usage scenarios.
+ - The test case teardown specifies the steps required to restore the test environment to a clean condition after execution.
+
+Because test cases are reusable, I can incorporate a test case into one or more suites. In testware, a test suite provides
+a framework for the execution of test cases, a way of grouping cases. The test suite allows you to combine test cases to create unique test conditions.
+
+### Principles for Test System Architecture
