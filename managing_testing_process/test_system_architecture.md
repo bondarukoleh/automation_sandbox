@@ -45,3 +45,20 @@ Because test cases are reusable, I can incorporate a test case into one or more 
 a framework for the execution of test cases, a way of grouping cases. The test suite allows you to combine test cases to create unique test conditions.
 
 ### Principles for Test System Architecture
+#### Quality
+ISO 9126 characteristics for software quality: functionality, reliability, usability, efficiency, maintainability, and portability. Most important, a well-designed test system provides the functionality you need for your testing projects.
+The test system should accurately model end-user hardware, software, and interface environments, and simulate end-user
+conditions - fidelity. Especially challenging types of fidelity and probe effect issues arise in performance, stress,
+capacity, error handling and recovery, and accelerated-life testing, we need fake it. \
+Repeatable, dependable test results are part of a reliable test system. A low degree of coupling between features and 
+test cases for them is another attribute of reliability. If you can tets feature A with feature B failing - it's more
+reliable. \
+Maintainability - flexibility over time. \
+Reliability, efficiency, and maintainability are enabled by simplicity. The more bells and whistles you introduce into 
+a test system, the wider its footprint.
+#### Testers and the Test System
+Simplicity of the test system is also essential to usability. The best test systems are easy to learn and easy to use.
+I also try to make the test system difficult to misuse, although I find I need to balance this objective against the
+costs of complexity. Newcomers is a nice indicator of how your system is simple.
+#### Miscellaneous Best Practices and Principles for Quality Test Systems
+
