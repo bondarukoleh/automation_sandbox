@@ -61,4 +61,17 @@ Simplicity of the test system is also essential to usability. The best test syst
 I also try to make the test system difficult to misuse, although I find I need to balance this objective against the
 costs of complexity. Newcomers is a nice indicator of how your system is simple.
 #### Miscellaneous Best Practices and Principles for Quality Test Systems
+The documentation for Test system should cover three main topics:
+- How to use the test system
+- How the test system works
+- Why you built the test system the way you did
+
+The test system should also document itself, so consider naming and approaches.
+
+### Test Cases
+In a sense, everything in the test system the test processes, the test tools, the reporting formats, the test
+environment, and so forth - exists to **support the execution of test cases**. These three things — action, data,
+and expected results — are the heart of test execution, since they create the test conditions.
+
+#### Test Conditions
 
