@@ -131,7 +131,7 @@ execution during the planning phase, the less confusion we anticipate.
 Resources \
 In this section I identify the key participants and their role, contacts.
 
-![exit](/managing_testing_process/media/resouces.PNG)
+![exit](/managing_testing_process/media/resources.PNG)
 
 Also we can add an *escalation process* that defines what happens if some key participants do not or cannot fulfill
 their agreed-upon role. Discussing this with managers, and aware the backup guys.

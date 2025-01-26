@@ -11,7 +11,7 @@ and the test environment. \
   facilities, lab, and so forth that the test team procures, installs, and configures the system under test in order to
   test it.
 
-![scope](/managing_testing_process/media/test_system.png)
+![scope](/managing_testing_process/media/test_system.PNG)
 
 A good test system helps the tester focus his testing efforts on the key quality risks, and find, reproduce, isolate,
 describe, and manage the most important bugs in the software or hardware being tested, as well as capturing and analyzing
