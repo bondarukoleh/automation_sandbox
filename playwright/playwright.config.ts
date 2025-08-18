@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig<TestOptions> = {
   workers: 4,
   // testMatch: 'test.list.ts',
   use: {
-    baseURL: 'https://olehbondaruk-emaily-server.herokuapp.com/',
+    baseURL: 'https://oleh-burger-cafe-811ed.web.app/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: ON_CI,
@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig<TestOptions> = {
   projects: [
     {
       name: 'chromium-tryouts',
-      testDir: 'tests/ui/',
+      testDir: 'tests',
       testMatch: /.*spec\.ts/,
       use: {
         ...devices['Desktop Chrome'],

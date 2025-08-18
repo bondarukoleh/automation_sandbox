@@ -4,9 +4,9 @@ class ButtonElement {
   page: Page;
   rootLocator: Locator;
 
-  constructor(page: Page, root: string) {
+  constructor(page: Page, root: string | Locator) {
     this.page = page;
-    this.rootLocator = page.locator(root);
+    this.rootLocator = root instanceof Locator ? root : page.locator(root);
   }
 
   async click() {

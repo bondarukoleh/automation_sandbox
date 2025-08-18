@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 
 test.describe('API tests @tryOuts', function () {
-  test.skip(_ => true);
+  // test.skip(_ => true);
   test('get something', async ({ request }) => {
     const response = await request.get(`/api/current_user`);
     console.log(response.status)
